@@ -18,7 +18,6 @@ export class Tab4Page implements OnInit {
 
   ngOnInit() {
     this.usuario = this.usuarioService.getUsuario();
-    this.usuario.foto = DOMINIO + this.usuario.foto;
     console.log(this.usuario);
   }
   // abrirPerfil() {
