@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   // url: 'https://promoshop.app/rest'
   // url: 'http://192.168.1.63:8080/NGNDigitalGuide/rest'
-  url: 'http://192.168.8.183:8000/api/v1'
+  url: 'http://192.168.8.183:8000/api/v1',
+  dominio: 'http://192.168.8.183:8000'
 };
 
 /*

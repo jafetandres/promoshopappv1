@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../interfaces/interfaces';
 import { UsuarioService } from '../../services/usuario.service';
 import { Router } from '@angular/router';
-
+import { environment } from 'src/environments/environment';
+const DOMINIO = environment.dominio;
 @Component({
   selector: 'app-tab4',
   templateUrl: './tab4.page.html',
@@ -17,6 +18,7 @@ export class Tab4Page implements OnInit {
 
   ngOnInit() {
     this.usuario = this.usuarioService.getUsuario();
+    this.usuario.foto = DOMINIO + this.usuario.foto;
     console.log(this.usuario);
   }
   // abrirPerfil() {

@@ -23,4 +23,6 @@ export interface Usuario {
   password1?: string;
   password2?: string;
   celular?: string;
+  foto?: string;
+
 }
