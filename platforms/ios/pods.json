@@ -1,0 +1,31 @@
+{
+    "declarations": {},
+    "sources": {
+        "https://github.com/CocoaPods/Specs.git": {
+            "source": "https://github.com/CocoaPods/Specs.git",
+            "count": 1
+        },
+        "https://cdn.cocoapods.org/": {
+            "source": "https://cdn.cocoapods.org/",
+            "count": 1
+        }
+    },
+    "libraries": {
+        "Firebase/Messaging": {
+            "name": "Firebase/Messaging",
+            "spec": "~> 7.0.0",
+            "count": 1
+        },
+        "Firebase/Auth": {
+            "name": "Firebase/Auth",
+            "spec": "~> 7.0.0",
+            "count": 1
+        },
+        "OneSignal": {
+            "name": "OneSignal",
+            "type": "podspec",
+            "spec": "2.15.2",
+            "count": 1
+        }
+    }
+}

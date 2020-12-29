@@ -1,0 +1,26 @@
+<ion-content scrollY="false">
+  <ion-slides class="slides" mode="ios" [options]="slideOptsOne" #slidePrincipal>
+    <ion-slide>
+      <ion-img class="img-slide" src="/assets/1.svg"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img class="img-slide"  src="/assets/2.svg"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img class="img-slide"  src="/assets/3.svg"></ion-img>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+<ion-footer class="myColor">
+  <div class="ion-text-justify ion-padding">
+    <h1>Bienvenido a promoshop. Lo quieres, lo tienes</h1>
+  </div>
+  <section>
+    <ion-button color="promoshop" class="botones" (click)="mostrarModalLogin()">
+      INICIAR SESIÓN
+    </ion-button>
+    <ion-button color="promoshop" fill="outline" (click)="mostrarModalSignUp()">
+      REGISTRARME
+    </ion-button>
+  </section>
+</ion-footer>

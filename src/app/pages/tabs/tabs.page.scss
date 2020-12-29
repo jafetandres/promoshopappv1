@@ -1,0 +1,270 @@
+// ion-tab-bar {
+//     bottom: 10px;
+//     position: absolute;
+//     border-radius: 16px;
+//     width: 92%;
+//     // margin: 0 auto;
+//     opacity: 0.9 !important;
+//     background-color: transparent;
+//     background-color: transparent;
+
+//     margin-left: auto;
+//     margin-right: auto;
+//     left: 0;
+//     right: 0;
+//     text-align: center;
+// }
+// ion-icon {
+//     opacity: 1 !important;
+// }
+ion-tab-button {
+    --color: var(--ion-color-medium);
+    --color-selected: var(--ion-color-promoshop);
+}
+
+//     &::before {
+//         background-color: transparent;
+//         display: block;
+//         content: "";
+//         margin: 0 auto;
+//         width: 20px;
+//         height: 2px;
+//     }
+
+//     &.tab-selected::before {
+//         background-color: var(--ion-color-promoshop);
+//     }
+// }
+
+// ion-tabs {
+//     --icon-active: #275efe;
+//     --icon-inactive: #6c7486;
+//     --icon-hover: #99a3ba;
+
+//     --text: var(--ion-color-promoshop);
+//     --circle: #e4ecfa;
+//     --background: var(--ion-color-ligth);
+//     --shadow: rgba(18, 22, 33, 0.1);
+
+// ion-tabs {
+ 
+//     ion-tab-bar {
+//         position: absolute;
+//         width: 100%;
+//         top: 90%;
+//         border-radius: 50px;
+//         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+//         margin-bottom: 15px;
+
+//         ion-tab-button {
+//             perspective: 100px;
+//             border-radius: 50px;
+          
+//             ion-label {
+//                 position: absolute;
+//                 transform: translateY(60px) skewY(-20deg);
+//                 transform-origin: left bottom;
+//                 color: var(--ion-color-promoshop);
+//                 font-weight: 700;
+//                 opacity: 0;
+//                 transition: all 0.35s ease;
+//                 will-change: opacity, transform, background-color;
+//             }
+//             ion-icon {
+//                 color: var(--ion-color-promoshop);
+//                 transition: all 0.35s ease;
+//                 will-change: opacity, transform, background-color;
+//             }
+//         }
+//     }
+// }
+// }
+// ion-tab-bar {
+// --icon-active: #275EFE;
+// --icon-inactive: #6C7486;
+// --icon-hover: #99A3BA;
+// --text: var(--ion-color-promoshop);
+// --circle: #E4ECFA;
+// --background: var(--ion-color-ligth);
+// --shadow: rgba(18, 22, 33, .1);
+// border-radius: 0 0 12px 12px;
+// background: var(--background);
+// width: 100%;
+// height: 64px;
+// padding: 0 12px;
+// box-shadow: 0 8px 16px var(--shadow);
+//     ul {
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//         display: flex;
+//         position: relative;
+//         z-index: 1;
+//         li {
+//             position: relative;
+//             flex-grow: 1;
+//             a {
+//                 --d: 1;
+//                 cursor: pointer;
+//                 display: table;
+//                 position: relative;
+//                 display: flex;
+//                 z-index: 1;
+//                 justify-content: center;
+//                 align-items: center;
+//                 height: 60px;
+//                 -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+//                 div,
+//                 span,
+//                 svg {
+//                     width: 20px;
+//                     height: 20px;
+//                     display: block;
+//                     -webkit-backface-visibility: hidden;
+//                 }
+//                 div {
+//                     position: absolute;
+//                     top: 50%;
+//                     left: 50%;
+//                     transform: translate(-50%, -84%);
+//                     span {
+//                         width: 20px;
+//                         bottom: 0;
+//                         left: 0;
+//                         transform-origin: 50% 50%;
+//                         position: absolute;
+//                         overflow: hidden;
+//                         z-index: 1;
+//                         background: var(--background);
+//                         transform: scale(.94);
+//                         transform-origin: 50% 100%;
+//                         animation: down .3s linear forwards;
+//                         svg {
+//                             position: absolute;
+//                             left: 0;
+//                             bottom: 0;
+//                         }
+//                         &:first-child {
+//                             height: 20px;
+//                             svg {
+//                                 transition: fill .3s ease, stroke .3s ease;
+//                                 fill: var(--icon);
+//                                 stroke: var(--icon);
+//                             }
+//                         }
+//                         &:last-child {
+//                             height: 0;
+//                             z-index: 5;
+//                             transition: height .25s ease;
+//                             svg {
+//                                 fill: var(--active);
+//                                 stroke: var(--active);
+//                             }
+//                         }
+//                     }
+//                 }
+//                 strong {
+//                     font-size: 10px;
+//                     font-weight: 600;
+//                     margin-top: 28px;
+//                     color: var(--text);
+//                     transition: all .3s ease;
+//                 }
+//                 &:hover {
+//                     div {
+//                         span {
+//                             &:first-child {
+//                                 svg {
+//                                     fill: var(--hover);
+//                                     stroke: var(--hover);
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             &.active {
+//                 a {
+//                     z-index: 5;
+//                     div {
+//                         span {
+//                             animation: high .35s linear forwards .05s;
+//                             &:first-child {
+//                                 svg {
+//                                     fill: var(--icon-b-active);
+//                                     stroke: var(--icon-b-active);
+//                                 }
+//                             }
+//                             &:last-child {
+//                                 height: 20px;
+//                                 transition: height .3s ease .25s;
+//                             }
+//                         }
+//                     }
+//                     strong {
+//                         opacity: 0;
+//                         transform: scale(.6);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     em {
+//         --offset: 0;
+//         border-radius: 50%;
+//         display: block;
+//         width: 6px;
+//         height: 6px;
+//         position: absolute;
+//         bottom: 13px;
+//         left: 4px;
+//         margin: 0 0 0 -3px;
+//         z-index: 4;
+//         transition: transform .4s ease;
+//         background: var(--dot);
+//         transform: translateX(var(--offset));
+//     }
+// }
+
+// @keyframes high {
+//     0% {
+//         transform: rotate(0deg) scale(.94);
+//     }
+//     33% {
+//         transform: rotate(calc(var(--d) * 10deg));
+//     }
+//     66% {
+//         transform: rotate(calc(var(--d) * 10deg)) translateY(-1px);
+//     }
+//     100% {
+//         transform: rotate(0deg) scale(1) translateY(-1px);
+//     }
+// }
+
+// @keyframes down {
+//     0% {
+//         transform: rotate(0deg) scale(1) translateY(-1px);
+//     }
+//     33% {
+//         transform: rotate(calc(var(--d) * 10deg));
+//     }
+//     66% {
+//         transform: rotate(calc(var(--d) * 10deg)) translateY(0);
+//     }
+//     100% {
+//         transform: rotate(0deg) scale(.94) translateY(0);
+//     }
+// }
+
+// html {
+//     box-sizing: border-box;
+//     -webkit-font-smoothing: antialiased;
+// }
+
+// * {
+//     box-sizing: inherit;
+//     &:before,
+//     &:after {
+//         box-sizing: inherit;
+//     }
+// }

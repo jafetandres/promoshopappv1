@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="salirConArgumentos()" fill="clear">
+        <ion-icon color="promoshop" name="close-outline" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-text-justify ion-padding">
+    <h3>Inicia sesión</h3>
+  </div>
+  <form (ngSubmit)="login( fLogin)" #fLogin="ngForm" >
+  <ion-item>
+    <ion-label position="floating" color="promoshop">Direccion de correo electronico</ion-label>
+    <ion-input type="email" name="email" autocomplete="usernames"  [(ngModel)]="loginUser.username" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="promoshop">Contraseña</ion-label>
+    <ion-input type="password" name="password" [(ngModel)]="loginUser.password"></ion-input>
+  </ion-item>
+<br>
+<br>
+    <ion-row>
+      <ion-col size="8" >
+        <ion-router-link href="#" color="medium">Olvidé mi contraseña</ion-router-link>
+      </ion-col>
+      <ion-col size="4" >
+        <ion-button type="submit" class="button-next" fill="clear">
+          <ion-icon name="arrow-forward-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

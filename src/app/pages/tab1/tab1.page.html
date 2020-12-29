@@ -1,0 +1,152 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-chip>
+      <ion-icon name="navigate-circle-outline"></ion-icon>
+      <ion-label>Av. Remigio Crespo 13-18</ion-label>
+    </ion-chip>
+    <ion-buttons slot="end">
+      <ion-button id="changeText" onClick="toggleText()">
+        <ion-icon name="options-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card class="card-principal">
+    <ion-card-header>
+      <ng-container *ngFor="let banner of banners | async">
+        <ion-slides pager="ios" [options]="publicidadSlide" *ngIf="banner.pantalla == 'home'">
+          <ion-slide *ngFor="let portada of banner.portadas">
+            <img src="{{portada.imagen}}">
+          </ion-slide>
+        </ion-slides>
+      </ng-container>
+
+
+      <!-- <ion-slide>
+          <img src="/assets/slide2.png" >
+        </ion-slide> -->
+
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-slides pager="false" [options]="buttonsSlide">
+        <ion-slide>
+          <ion-button (click)="onClick()" fill="clear">
+            <div>
+              <ion-icon src="/assets/icon/comida-icon.svg"></ion-icon>
+              <small> Comida</small>
+            </div>
+          </ion-button>
+        </ion-slide>
+        <ion-slide>
+          <ion-button (click)="onClick()" fill="clear">
+            <div>
+              <ion-icon src="/assets/icon/express-icon.svg"></ion-icon>
+              <small>Envio Express</small>
+            </div>
+          </ion-button>
+        </ion-slide>
+        <ion-slide>
+          <ion-button (click)="onClick()" fill="clear">
+            <div>
+              <ion-icon src="/assets/icon/raspa-gana-icon.svg"></ion-icon>
+              <small>Raspa y Gana</small>
+            </div>
+          </ion-button>
+        </ion-slide>
+        <ion-slide>
+          <ion-button (click)="onClick()" fill="clear">
+            <div>
+              <ion-icon src="/assets/icon/ofertas-icon.svg"></ion-icon>
+              <small> Ofertas</small>
+            </div>
+          </ion-button>
+        </ion-slide>
+        <ion-slide>
+          <ion-button (click)="onClick()" fill="clear" color="dark">
+            <div>
+              <ion-icon src="/assets/icon/servicios-icon.svg"></ion-icon>
+              <small> Servicios</small>
+            </div>
+          </ion-button>
+        </ion-slide>
+      </ion-slides>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- Refresher -->
+
+
+  <!-- Categorias -->
+  <app-categorias [categorias]="categorias"></app-categorias>
+
+  <ion-card class="card-container">
+    <h4>Marketplace</h4>
+    <ion-slides mode="ios" pager="false" [options]="marketplaceSlide">
+      <ion-slide>
+        <ion-card>
+          <img
+            src="https://d500.epimg.net/cincodias/imagenes/2020/11/06/smartphones/1604648913_817311_1604648985_noticia_normal.jpg" />
+          <ion-card-header>
+            <ion-card-title>
+              <ion-row>
+                <ion-col size="6">
+                  Iphone 8 Plus
+                </ion-col>
+
+                <ion-col size="6" style="text-align: right;">
+                  <ion-label>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+
+
+            </ion-card-title>
+            <ion-card-subtitle>Costo de envio: $1.50</ion-card-subtitle>
+
+          </ion-card-header>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img
+            src="https://ugolini.co.th/wp-content/uploads/9839/want-to-change-up-your-home-decor-enter-foerni-hong-kongs-first-luxe-furniture-subscription.jpg" />
+          <ion-card-header>
+            <ion-card-title>
+              <ion-row>
+                <ion-col size="6">
+                  Juego de Comedor
+                </ion-col>
+                <ion-col size="6" style="text-align: right;">
+                  <ion-label>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                    <ion-icon src="/assets/star.svg"></ion-icon>
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-card-title>
+            <ion-card-subtitle>Costo de envio: $0.85</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+
+  <!-- Infinite Scroll-->
+
+
+
+</ion-content>

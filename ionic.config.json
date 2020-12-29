@@ -1,0 +1,7 @@
+{
+  "name": "promoshop",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

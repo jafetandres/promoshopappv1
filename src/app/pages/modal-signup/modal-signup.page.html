@@ -1,0 +1,58 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="salirConArgumentos()" fill="clear">
+        <ion-icon color="promoshop" name="close-outline" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <div class="ion-text-justify ion-padding">
+    <h3>Crea tu cuenta</h3>
+  </div>
+  <form (ngSubmit)="registro( fRegistro)" #fRegistro="ngForm">
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="floating" color="promoshop">Nombres</ion-label>
+          <ion-input autocomplete="name" name="nombres" [(ngModel)]="registerUser.nombres"  required></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="floating" color="promoshop">Apellidos</ion-label>
+          <ion-input autocomplete="family-name" name="apellidos" [(ngModel)]="registerUser.apellidos" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-item>
+      <ion-label position="floating" color="promoshop">Direccion de correo electronico</ion-label>
+      <ion-input type="email" autocomplete="email" name="correo" [(ngModel)]="registerUser.email" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label slot="end" color="medium">
+        <ion-button (click)="enviarMensaje()" fill="clear">
+          Verificar
+        </ion-button>
+      </ion-label>
+      <ion-label position="floating" color="promoshop">Numero de teléfono</ion-label>
+      <ion-input type="tel" name="celular" [(ngModel)]="registerUser.celular" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="promoshop">Contraseña</ion-label>
+      <ion-input type="password" name="password" [(ngModel)]="registerUser.password1" required></ion-input>
+    </ion-item>
+  <br>
+  <ion-text color="medium">
+    <p>
+      Al continuar, acepto las <a>condiciones de uso</a> de promoshop
+      y reconozco haber leído su <a>política de privacidad</a>.
+    </p>
+  </ion-text>
+
+  <ion-button type="submit" class="button-next" fill="clear">
+    <ion-icon name="arrow-forward-outline" size="large"></ion-icon>
+  </ion-button>
+</form>
+</ion-content>
