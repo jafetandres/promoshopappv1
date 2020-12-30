@@ -1,8 +1,19 @@
 ion-content{
-    justify-content: center;
+   
     ion-avatar{
+        margin : 0 auto;
+        background-color: rebeccapurple;
         width: 200px;
         height: 200px;
-        text-align: center;
+        // display: flex;
+        // justify-content: center;
+        img {
+            // height: 250px;
+            // width: 250px;
+            // border-radius: 100%;
+            // box-shadow: 0 0 5px gray;
+            // display: block;
+            // margin: 0 auto;
+        }
     }
 }
