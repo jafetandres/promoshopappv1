@@ -61,14 +61,41 @@
       </ion-item>
 
     </ion-list>
-    <ion-row>
-      <ion-col size="3">
-        Total:
-      </ion-col>
-      <ion-col size="9">
-        {{ getTotal() | currency:'USD' }}
-      </ion-col>
-    </ion-row>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="6">
+          Subtotal:
+        </ion-col>
+        <ion-col size="6">
+          {{ getTotal() | currency:'USD' }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          Iva:
+        </ion-col>
+        <ion-col size="6">
+          {{ getTotal() | currency:'USD' }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          Costo de envio:
+        </ion-col>
+        <ion-col size="6">
+          {{ getTotal() | currency:'USD' }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          Total a pagar:
+        </ion-col>
+        <ion-col size="6">
+          {{ getTotal() | currency:'USD' }}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+   
     <ion-button expand="block" (click)="checkout()" color="promoshop">
       Finalizar compra
     </ion-button>
