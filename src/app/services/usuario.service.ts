@@ -6,6 +6,7 @@ import { FirebaseAuthentication } from '@ionic-native/firebase-authentication/ng
 import { Usuario } from '../interfaces/interfaces';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
+import { tap } from 'rxjs/operators';
 
 
 const URL = environment.url;
@@ -14,10 +15,11 @@ const URL = environment.url;
   providedIn: 'root'
 })
 export class UsuarioService {
-  
+
 
   token: string = null;
   private usuario: Usuario = {};
+  private ubicaciones: any = [];
 
 
   constructor(
@@ -100,26 +102,33 @@ export class UsuarioService {
       const headers = new HttpHeaders({
         'Authorization': 'Token ' + this.token
       });
-      this.http.get(`${URL}/usuario/`, {headers})
-      .subscribe(resp =>{
-
-        if(resp['ok']){
-          this.usuario=resp['usuario'];
-          resolve(true);
-        }else{
-          this.navCtrl.navigateRoot('/inicio', { animated: true });
-          resolve(false);
-        }
-        
-      });
-
-      // if (this.token) {
-      //   resolve(true);
-      // } else {
-      //   this.navCtrl.navigateRoot('/inicio', { animated: true });
-      //   resolve(false);
-      // }
+      this.http.get(`${URL}/usuario/`, { headers })
+        .subscribe(resp => {
+          console.log(resp);
+          if (resp['ok']) {
+            this.usuario = resp['usuario'];
+            resolve(true);
+          } else {
+            this.navCtrl.navigateRoot('/inicio', { animated: true });
+            resolve(false);
+          }
+        }, error => {
+          if (error.status === 401) {
+            this.navCtrl.navigateRoot('/inicio', { animated: true });
+            resolve(false);
+          }
+        });
     });
   }
 
+  async getUbicaciones() {
+    await this.cargarToken();
+    if (!this.token) {
+      this.navCtrl.navigateRoot('/inicio', { animated: true });
+    }
+    const headers = new HttpHeaders({
+      'Authorization': 'Token ' + this.token
+    });
+    return this.http.get(`${URL}/ubicaciones/`, { headers });
+  }
 }

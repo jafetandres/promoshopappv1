@@ -26,3 +26,13 @@ export interface Usuario {
   foto?: string;
 
 }
+export interface Producto {
+  id?: number;
+  nombre?: string;
+  calificacion?: string;
+  precio?: number;
+  descripcion?: string;
+  stock?: number;
+  cantidad?: number;
+  cantidad_max?: number;
+}

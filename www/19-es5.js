@@ -13,7 +13,7 @@
 
   (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[19], {
     /***/
-    "./node_modules/@ionic/core/dist/esm/ion-menu_3.entry.js":
+    "kyFE":
     /*!***************************************************************!*\
       !*** ./node_modules/@ionic/core/dist/esm/ion-menu_3.entry.js ***!
       \***************************************************************/
@@ -21,7 +21,7 @@
     /*! exports provided: ion_menu, ion_menu_button, ion_menu_toggle */
 
     /***/
-    function node_modulesIonicCoreDistEsmIonMenu_3EntryJs(module, __webpack_exports__, __webpack_require__) {
+    function kyFE(module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -48,55 +48,55 @@
 
       var _index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ./index-e806d1f6.js */
-      "./node_modules/@ionic/core/dist/esm/index-e806d1f6.js");
+      "A36C");
       /* harmony import */
 
 
       var _ionic_global_9d5c8ee3_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ./ionic-global-9d5c8ee3.js */
-      "./node_modules/@ionic/core/dist/esm/ionic-global-9d5c8ee3.js");
+      "Zgba");
       /* harmony import */
 
 
-      var _helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! ./helpers-fde0057c.js */
-      "./node_modules/@ionic/core/dist/esm/helpers-fde0057c.js");
+      var _helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ./helpers-90f46169.js */
+      "QPqR");
       /* harmony import */
 
 
-      var _animation_8c514e52_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-      /*! ./animation-8c514e52.js */
-      "./node_modules/@ionic/core/dist/esm/animation-8c514e52.js");
+      var _animation_54fe0237_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./animation-54fe0237.js */
+      "z1RL");
       /* harmony import */
 
 
       var _cubic_bezier_eea9a7a9_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ./cubic-bezier-eea9a7a9.js */
-      "./node_modules/@ionic/core/dist/esm/cubic-bezier-eea9a7a9.js");
+      "bC4P");
       /* harmony import */
 
 
       var _gesture_controller_31cb6bb9_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ./gesture-controller-31cb6bb9.js */
-      "./node_modules/@ionic/core/dist/esm/gesture-controller-31cb6bb9.js");
+      "y08P");
       /* harmony import */
 
 
-      var _hardware_back_button_389954a0_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-      /*! ./hardware-back-button-389954a0.js */
-      "./node_modules/@ionic/core/dist/esm/hardware-back-button-389954a0.js");
+      var _hardware_back_button_4a6b37fb_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      /*! ./hardware-back-button-4a6b37fb.js */
+      "B4Jq");
       /* harmony import */
 
 
-      var _index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
-      /*! ./index-1e47c645.js */
-      "./node_modules/@ionic/core/dist/esm/index-1e47c645.js");
+      var _index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      /*! ./index-3a75d1af.js */
+      "26+k");
       /* harmony import */
 
 
       var _theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ./theme-ff3fc52f.js */
-      "./node_modules/@ionic/core/dist/esm/theme-ff3fc52f.js");
+      "74mu");
 
       var menuIosCss = ":host{--width:304px;--min-width:auto;--max-width:auto;--height:100%;--min-height:auto;--max-height:auto;--background:var(--ion-background-color, #fff);left:0;right:0;top:0;bottom:0;display:none;position:absolute;contain:strict}:host(.show-menu){display:block}.menu-inner{left:0;right:auto;top:0;bottom:0;-webkit-transform:translate3d(-9999px,  0,  0);transform:translate3d(-9999px,  0,  0);display:-ms-flexbox;display:flex;position:absolute;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:justify;justify-content:space-between;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);background:var(--background);contain:strict}[dir=rtl] .menu-inner,:host-context([dir=rtl]) .menu-inner{left:unset;right:unset;left:auto;right:0}[dir=rtl] .menu-inner,:host-context([dir=rtl]) .menu-inner{-webkit-transform:translate3d(calc(-1 * -9999px),  0,  0);transform:translate3d(calc(-1 * -9999px),  0,  0)}:host(.menu-side-start) .menu-inner{--ion-safe-area-right:0px;right:auto;left:0}:host(.menu-side-end) .menu-inner{--ion-safe-area-left:0px;right:0;left:auto;}ion-backdrop{display:none;opacity:0.01;z-index:-1}@media (max-width: 340px){.menu-inner{--width:264px}}:host(.menu-type-reveal){z-index:0}:host(.menu-type-reveal.show-menu) .menu-inner{-webkit-transform:translate3d(0,  0,  0);transform:translate3d(0,  0,  0)}:host(.menu-type-overlay){z-index:1000}:host(.menu-type-overlay) .show-backdrop{display:block;cursor:pointer}:host(.menu-pane-visible){width:var(--width);min-width:var(--min-width);max-width:var(--max-width)}:host(.menu-pane-visible) .menu-inner{left:0;right:0;width:auto;-webkit-transform:none !important;transform:none !important;-webkit-box-shadow:none !important;box-shadow:none !important}:host(.menu-pane-visible) ion-backdrop{display:hidden !important;}:host(.menu-type-push){z-index:1000}:host(.menu-type-push) .show-backdrop{display:block}";
       var menuMdCss = ":host{--width:304px;--min-width:auto;--max-width:auto;--height:100%;--min-height:auto;--max-height:auto;--background:var(--ion-background-color, #fff);left:0;right:0;top:0;bottom:0;display:none;position:absolute;contain:strict}:host(.show-menu){display:block}.menu-inner{left:0;right:auto;top:0;bottom:0;-webkit-transform:translate3d(-9999px,  0,  0);transform:translate3d(-9999px,  0,  0);display:-ms-flexbox;display:flex;position:absolute;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:justify;justify-content:space-between;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);background:var(--background);contain:strict}[dir=rtl] .menu-inner,:host-context([dir=rtl]) .menu-inner{left:unset;right:unset;left:auto;right:0}[dir=rtl] .menu-inner,:host-context([dir=rtl]) .menu-inner{-webkit-transform:translate3d(calc(-1 * -9999px),  0,  0);transform:translate3d(calc(-1 * -9999px),  0,  0)}:host(.menu-side-start) .menu-inner{--ion-safe-area-right:0px;right:auto;left:0}:host(.menu-side-end) .menu-inner{--ion-safe-area-left:0px;right:0;left:auto;}ion-backdrop{display:none;opacity:0.01;z-index:-1}@media (max-width: 340px){.menu-inner{--width:264px}}:host(.menu-type-reveal){z-index:0}:host(.menu-type-reveal.show-menu) .menu-inner{-webkit-transform:translate3d(0,  0,  0);transform:translate3d(0,  0,  0)}:host(.menu-type-overlay){z-index:1000}:host(.menu-type-overlay) .show-backdrop{display:block;cursor:pointer}:host(.menu-pane-visible){width:var(--width);min-width:var(--min-width);max-width:var(--max-width)}:host(.menu-pane-visible) .menu-inner{left:0;right:0;width:auto;-webkit-transform:none !important;transform:none !important;-webkit-box-shadow:none !important;box-shadow:none !important}:host(.menu-pane-visible) ion-backdrop{display:hidden !important;}:host(.menu-type-overlay) .menu-inner{-webkit-box-shadow:4px 0px 16px rgba(0, 0, 0, 0.18);box-shadow:4px 0px 16px rgba(0, 0, 0, 0.18)}";
@@ -179,7 +179,7 @@
         }, {
           key: "sideChanged",
           value: function sideChanged() {
-            this.isEndSide = Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["l"])(this.side);
+            this.isEndSide = Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["l"])(this.side);
           }
         }, {
           key: "swipeGestureChanged",
@@ -226,12 +226,12 @@
                       this.typeChanged(this.type, undefined);
                       this.sideChanged(); // register this menu with the app's menu controller
 
-                      _index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__["m"]._register(this);
+                      _index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__["m"]._register(this);
 
                       _context.next = 15;
                       return Promise.resolve().then(__webpack_require__.bind(null,
                       /*! ./index-f49d994d.js */
-                      "./node_modules/@ionic/core/dist/esm/index-f49d994d.js"));
+                      "iWo5"));
 
                     case 15:
                       this.gesture = _context.sent.createGesture({
@@ -305,7 +305,7 @@
           value: function disconnectedCallback() {
             this.blocker.destroy();
 
-            _index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__["m"]._unregister(this);
+            _index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__["m"]._unregister(this);
 
             if (this.animation) {
               this.animation.destroy();
@@ -401,7 +401,7 @@
           key: "setOpen",
           value: function setOpen(shouldOpen) {
             var animated = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-            return _index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__["m"]._setOpen(this, shouldOpen, animated);
+            return _index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__["m"]._setOpen(this, shouldOpen, animated);
           }
         }, {
           key: "_setOpen",
@@ -479,7 +479,7 @@
 
 
                       _context4.next = 7;
-                      return _index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__["m"]._createAnimation(this.type, this);
+                      return _index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__["m"]._createAnimation(this.type, this);
 
                     case 7:
                       this.animation = _context4.sent;
@@ -576,7 +576,7 @@
 
             if (this._isOpen) {
               return true; // TODO error
-            } else if (_index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__["m"]._getOpenSync()) {
+            } else if (_index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__["m"]._getOpenSync()) {
               return false;
             }
 
@@ -592,7 +592,7 @@
           key: "onStart",
           value: function onStart() {
             if (!this.isAnimating || !this.animation) {
-              Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(false, 'isAnimating has to be true');
+              Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(false, 'isAnimating has to be true');
               return;
             } // the cloned animation should not use an easing curve during seek
 
@@ -603,7 +603,7 @@
           key: "onMove",
           value: function onMove(detail) {
             if (!this.isAnimating || !this.animation) {
-              Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(false, 'isAnimating has to be true');
+              Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(false, 'isAnimating has to be true');
               return;
             }
 
@@ -617,7 +617,7 @@
             var _this2 = this;
 
             if (!this.isAnimating || !this.animation) {
-              Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(false, 'isAnimating has to be true');
+              Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(false, 'isAnimating has to be true');
               return;
             }
 
@@ -657,7 +657,7 @@
              * in terms of a linear curve.
              */
 
-            newStepValue += Object(_cubic_bezier_eea9a7a9_js__WEBPACK_IMPORTED_MODULE_4__["g"])([0, 0], [0.4, 0], [0.6, 1], [1, 1], Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["h"])(0, adjustedStepValue, 0.9999))[0] || 0;
+            newStepValue += Object(_cubic_bezier_eea9a7a9_js__WEBPACK_IMPORTED_MODULE_4__["g"])([0, 0], [0.4, 0], [0.6, 1], [1, 1], Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["h"])(0, adjustedStepValue, 0.9999))[0] || 0;
             var playTo = this._isOpen ? !shouldComplete : shouldComplete;
             this.animation.easing('cubic-bezier(0.4, 0.0, 0.6, 1)').onFinish(function () {
               return _this2.afterAnimation(shouldOpen);
@@ -668,7 +668,7 @@
         }, {
           key: "beforeAnimation",
           value: function beforeAnimation(shouldOpen) {
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(!this.isAnimating, '_before() should not be called while animating'); // this places the menu into the correct location before it animates in
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(!this.isAnimating, '_before() should not be called while animating'); // this places the menu into the correct location before it animates in
             // this css class doesn't actually kick off any animations
 
             this.el.classList.add(SHOW_MENU);
@@ -689,7 +689,7 @@
         }, {
           key: "afterAnimation",
           value: function afterAnimation(isOpen) {
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(this.isAnimating, '_before() should be called while animating'); // keep opening/closing the menu disabled for a touch more yet
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(this.isAnimating, '_before() should be called while animating'); // keep opening/closing the menu disabled for a touch more yet
             // only add listeners/css if it's enabled and isOpen
             // and only remove listeners/css if it's not open
             // emit opened/closed events
@@ -745,15 +745,15 @@
             }
 
             if (!this.disabled) {
-              _index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__["m"]._setActiveMenu(this);
+              _index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__["m"]._setActiveMenu(this);
             }
 
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(!this.isAnimating, 'can not be animating');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(!this.isAnimating, 'can not be animating');
           }
         }, {
           key: "forceClosing",
           value: function forceClosing() {
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(this._isOpen, 'menu cannot be closed');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(this._isOpen, 'menu cannot be closed');
             this.isAnimating = true;
             var ani = this.animation.direction('reverse');
             ani.play({
@@ -839,7 +839,7 @@
               switch (_context6.prev = _context6.next) {
                 case 0:
                   _context6.next = 2;
-                  return _index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__["m"].get(menu);
+                  return _index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__["m"].get(menu);
 
                 case 2:
                   menuEl = _context6.sent;
@@ -903,7 +903,7 @@
               while (1) {
                 switch (_context7.prev = _context7.next) {
                   case 0:
-                    return _context7.abrupt("return", _index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__["m"].toggle(_this4.menu));
+                    return _context7.abrupt("return", _index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__["m"].toggle(_this4.menu));
 
                   case 1:
                   case "end":
@@ -1018,7 +1018,7 @@
           this.autoHide = true;
 
           this.onClick = function () {
-            return _index_1e47c645_js__WEBPACK_IMPORTED_MODULE_7__["m"].toggle(_this5.menu);
+            return _index_3a75d1af_js__WEBPACK_IMPORTED_MODULE_7__["m"].toggle(_this5.menu);
           };
         }
 

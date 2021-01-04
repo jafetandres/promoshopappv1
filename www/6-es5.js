@@ -9,7 +9,7 @@
 
   (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[6], {
     /***/
-    "./node_modules/@ionic/core/dist/esm/ion-button_2.entry.js":
+    "0Pbj":
     /*!*****************************************************************!*\
       !*** ./node_modules/@ionic/core/dist/esm/ion-button_2.entry.js ***!
       \*****************************************************************/
@@ -17,7 +17,7 @@
     /*! exports provided: ion_button, ion_icon */
 
     /***/
-    function node_modulesIonicCoreDistEsmIonButton_2EntryJs(module, __webpack_exports__, __webpack_require__) {
+    function Pbj(module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -38,25 +38,25 @@
 
       var _index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ./index-e806d1f6.js */
-      "./node_modules/@ionic/core/dist/esm/index-e806d1f6.js");
+      "A36C");
       /* harmony import */
 
 
       var _ionic_global_9d5c8ee3_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ./ionic-global-9d5c8ee3.js */
-      "./node_modules/@ionic/core/dist/esm/ionic-global-9d5c8ee3.js");
+      "Zgba");
       /* harmony import */
 
 
-      var _helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! ./helpers-fde0057c.js */
-      "./node_modules/@ionic/core/dist/esm/helpers-fde0057c.js");
+      var _helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ./helpers-90f46169.js */
+      "QPqR");
       /* harmony import */
 
 
       var _theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ./theme-ff3fc52f.js */
-      "./node_modules/@ionic/core/dist/esm/theme-ff3fc52f.js");
+      "74mu");
 
       var CACHED_MAP;
 
@@ -186,6 +186,7 @@
           this.inItem = false;
           this.inListHeader = false;
           this.inToolbar = false;
+          this.inheritedAttributes = {};
           /**
            * The type of button.
            */
@@ -216,7 +217,7 @@
           this.handleClick = function (ev) {
             if (_this.type === 'button') {
               Object(_theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_3__["o"])(_this.href, ev, _this.routerDirection, _this.routerAnimation);
-            } else if (Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["j"])(_this.el)) {
+            } else if (Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["j"])(_this.el)) {
               // this button wants to specifically submit a form
               // climb up the dom to see if we're in a <form>
               // and if so, then use JS to submit it
@@ -249,6 +250,7 @@
             this.inToolbar = !!this.el.closest('ion-buttons');
             this.inListHeader = !!this.el.closest('ion-list-header');
             this.inItem = !!this.el.closest('ion-item') || !!this.el.closest('ion-item-divider');
+            this.inheritedAttributes = Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.el, ['aria-label']);
           }
         }, {
           key: "render",
@@ -267,7 +269,8 @@
                 expand = this.expand,
                 hasIconOnly = this.hasIconOnly,
                 shape = this.shape,
-                strong = this.strong;
+                strong = this.strong,
+                inheritedAttributes = this.inheritedAttributes;
             var finalSize = size === undefined && this.inItem ? 'small' : size;
             var TagType = href === undefined ? 'button' : 'a';
             var attrs = TagType === 'button' ? {
@@ -294,7 +297,7 @@
               disabled: disabled,
               onFocus: this.onFocus,
               onBlur: this.onBlur
-            }), Object(_index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", {
+            }, inheritedAttributes), Object(_index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", {
               "class": "button-inner"
             }, Object(_index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", {
               name: "icon-only"

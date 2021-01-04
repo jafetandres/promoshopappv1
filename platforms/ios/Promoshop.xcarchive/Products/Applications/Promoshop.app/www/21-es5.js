@@ -17,7 +17,7 @@
 
   (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[21], {
     /***/
-    "./node_modules/@ionic/core/dist/esm/ion-nav_2.entry.js":
+    "vnES":
     /*!**************************************************************!*\
       !*** ./node_modules/@ionic/core/dist/esm/ion-nav_2.entry.js ***!
       \**************************************************************/
@@ -25,7 +25,7 @@
     /*! exports provided: ion_nav, ion_nav_link */
 
     /***/
-    function node_modulesIonicCoreDistEsmIonNav_2EntryJs(module, __webpack_exports__, __webpack_require__) {
+    function vnES(module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -46,37 +46,37 @@
 
       var _index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ./index-e806d1f6.js */
-      "./node_modules/@ionic/core/dist/esm/index-e806d1f6.js");
+      "A36C");
       /* harmony import */
 
 
       var _ionic_global_9d5c8ee3_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ./ionic-global-9d5c8ee3.js */
-      "./node_modules/@ionic/core/dist/esm/ionic-global-9d5c8ee3.js");
+      "Zgba");
       /* harmony import */
 
 
-      var _helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! ./helpers-fde0057c.js */
-      "./node_modules/@ionic/core/dist/esm/helpers-fde0057c.js");
+      var _helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ./helpers-90f46169.js */
+      "QPqR");
       /* harmony import */
 
 
-      var _index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-      /*! ./index-4e81e1e8.js */
-      "./node_modules/@ionic/core/dist/esm/index-4e81e1e8.js");
+      var _index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./index-1eeeab2e.js */
+      "jRcJ");
       /* harmony import */
 
 
       var _cubic_bezier_eea9a7a9_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ./cubic-bezier-eea9a7a9.js */
-      "./node_modules/@ionic/core/dist/esm/cubic-bezier-eea9a7a9.js");
+      "bC4P");
       /* harmony import */
 
 
       var _framework_delegate_4584ab5a_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ./framework-delegate-4584ab5a.js */
-      "./node_modules/@ionic/core/dist/esm/framework-delegate-4584ab5a.js");
+      "ZaV5");
 
       var VIEW_STATE_NEW = 1;
       var VIEW_STATE_ATTACHED = 2;
@@ -135,7 +135,7 @@
         }, {
           key: "_destroy",
           value: function _destroy() {
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(this.state !== VIEW_STATE_DESTROYED, 'view state must be ATTACHED');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(this.state !== VIEW_STATE_DESTROYED, 'view state must be ATTACHED');
             var element = this.element;
 
             if (element) {
@@ -293,10 +293,10 @@
                       this.rootChanged();
                       _context2.next = 3;
                       return __webpack_require__.e(
-                      /*! import() | swipe-back-271cf974-js */
-                      "swipe-back-271cf974-js").then(__webpack_require__.bind(null,
-                      /*! ./swipe-back-271cf974.js */
-                      "./node_modules/@ionic/core/dist/esm/swipe-back-271cf974.js"));
+                      /*! import() | swipe-back-2154c9a7-js */
+                      "swipe-back-2154c9a7-js").then(__webpack_require__.bind(null,
+                      /*! ./swipe-back-2154c9a7.js */
+                      "V+6w"));
 
                     case 3:
                       this.gesture = _context2.sent.createSwipeBackGesture(this.el, this.canStart.bind(this), this.onStart.bind(this), this.onMove.bind(this), this.onEnd.bind(this));
@@ -325,7 +325,7 @@
             try {
               for (_iterator.s(); !(_step = _iterator.n()).done;) {
                 var view = _step.value;
-                Object(_index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["l"])(view.element, _index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["d"]);
+                Object(_index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["l"])(view.element, _index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["d"]);
 
                 view._destroy();
               }
@@ -1009,8 +1009,8 @@
             }
 
             if (ti.removeView !== undefined) {
-              Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(ti.removeStart !== undefined, 'removeView needs removeStart');
-              Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(ti.removeCount !== undefined, 'removeView needs removeCount');
+              Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(ti.removeStart !== undefined, 'removeView needs removeStart');
+              Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(ti.removeCount !== undefined, 'removeView needs removeCount');
               var index = this.views.indexOf(ti.removeView);
 
               if (index < 0) {
@@ -1048,7 +1048,7 @@
               return;
             }
 
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(insertViews.length > 0, 'length can not be zero');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(insertViews.length > 0, 'length can not be zero');
             var viewControllers = convertToViews(insertViews);
 
             if (viewControllers.length === 0) {
@@ -1112,9 +1112,9 @@
         }, {
           key: "postViewInit",
           value: function postViewInit(enteringView, leavingView, ti) {
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(leavingView || enteringView, 'Both leavingView and enteringView are null');
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(ti.resolve, 'resolve must be valid');
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(ti.reject, 'reject must be valid');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(leavingView || enteringView, 'Both leavingView and enteringView are null');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(ti.resolve, 'resolve must be valid');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(ti.reject, 'reject must be valid');
             var opts = ti.opts;
             var insertViews = ti.insertViews;
             var removeStart = ti.removeStart;
@@ -1122,8 +1122,8 @@
             var destroyQueue; // there are views to remove
 
             if (removeStart !== undefined && removeCount !== undefined) {
-              Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(removeStart >= 0, 'removeStart can not be negative');
-              Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(removeCount >= 0, 'removeCount can not be negative');
+              Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(removeStart >= 0, 'removeStart can not be negative');
+              Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(removeCount >= 0, 'removeCount can not be negative');
               destroyQueue = [];
 
               for (var i = 0; i < removeCount; i++) {
@@ -1139,7 +1139,7 @@
             }
 
             var finalBalance = this.views.length + (insertViews !== undefined ? insertViews.length : 0) - (removeCount !== undefined ? removeCount : 0);
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(finalBalance >= 0, 'final balance can not be negative');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(finalBalance >= 0, 'final balance can not be negative');
 
             if (finalBalance === 0) {
               console.warn("You can't remove all the pages in the navigation stack. nav.pop() is probably called too many times.", this, this.el);
@@ -1185,9 +1185,9 @@
               try {
                 for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
                   var _view2 = _step4.value;
-                  Object(_index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["l"])(_view2.element, _index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["b"]);
-                  Object(_index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["l"])(_view2.element, _index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["c"]);
-                  Object(_index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["l"])(_view2.element, _index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["d"]);
+                  Object(_index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["l"])(_view2.element, _index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["b"]);
+                  Object(_index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["l"])(_view2.element, _index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["c"]);
+                  Object(_index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["l"])(_view2.element, _index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["d"]);
                 } // once all lifecycle events has been delivered, we can safely detroy the views
 
               } catch (err) {
@@ -1243,7 +1243,7 @@
                         leavingEl: leavingEl
                       }, opts);
                       _context7.next = 8;
-                      return Object(_index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["t"])(animationOpts);
+                      return Object(_index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["t"])(animationOpts);
 
                     case 8:
                       _yield$Object = _context7.sent;
@@ -1290,10 +1290,10 @@
             if (existingIndex > -1) {
               // this view is already in the stack!!
               // move it to its new location
-              Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(view.nav === this, 'view is not part of the nav');
+              Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(view.nav === this, 'view is not part of the nav');
               views.splice(index, 0, views.splice(existingIndex, 1)[0]);
             } else {
-              Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(!view.nav, 'nav is used'); // this is a new view to add to the stack
+              Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(!view.nav, 'nav is used'); // this is a new view to add to the stack
               // create the new entering view
 
               view.nav = this; // insert the entering view into the correct index in the stack
@@ -1304,10 +1304,10 @@
         }, {
           key: "removeView",
           value: function removeView(view) {
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(view.state === VIEW_STATE_ATTACHED || view.state === VIEW_STATE_DESTROYED, 'view state should be loaded or destroyed');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(view.state === VIEW_STATE_ATTACHED || view.state === VIEW_STATE_DESTROYED, 'view state should be loaded or destroyed');
             var views = this.views;
             var index = views.indexOf(view);
-            Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["k"])(index > -1, 'view must be part of the stack');
+            Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["k"])(index > -1, 'view must be part of the stack');
 
             if (index >= 0) {
               views.splice(index, 1);
@@ -1354,12 +1354,12 @@
                 if (i > activeViewIndex) {
                   // this view comes after the active view
                   // let's unload it
-                  Object(_index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["l"])(element, _index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["d"]);
+                  Object(_index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["l"])(element, _index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["d"]);
                   this.destroyView(view);
                 } else if (i < activeViewIndex) {
                   // this view comes before the active view
                   // and it is not a portal then ensure it is hidden
-                  Object(_index_4e81e1e8_js__WEBPACK_IMPORTED_MODULE_3__["s"])(element, true);
+                  Object(_index_1eeeab2e_js__WEBPACK_IMPORTED_MODULE_3__["s"])(element, true);
                 }
               }
             }

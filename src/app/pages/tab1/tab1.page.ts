@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild, ElementRef } from '@angular/core';
 import { HttpgenericoService } from 'src/app/services/httpgenerico.service';
-import { CategoriasService } from '../../services/categorias.service';
 import { HomeService } from '../../services/home.service';
 
 @Component({
@@ -9,9 +8,9 @@ import { HomeService } from '../../services/home.service';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit {
-
   categorias: any;
   banners: any;
+  productosMarketPlace:any;
 
   buttonsSlide = {
     slidesPerView: 3.5
@@ -25,17 +24,19 @@ export class Tab1Page implements OnInit {
 
 
 
-  constructor(private homeService: HomeService, public httpgenerico: HttpgenericoService) { }
+  constructor(private homeService: HomeService, 
+    public httpgenerico: HttpgenericoService) { }
 
 
   ngOnInit() {
 
     this.categorias = this.homeService.getCategorias();
     this.banners = this.homeService.getBanners();
+    this.productosMarketPlace= this.homeService.getProductosMarketPlace();
     // let peticion = { pagina: 1, query: "todos" };
-
     // console.log(this.httpgenerico.postAuth("procesador/getComprasUsuario", peticion));
-
   }
+
+
 
 }

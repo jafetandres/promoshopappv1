@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild, ElementRef } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { CartMarketplaceService } from '../../services/cart-marketplace.service';
 
 @Component({
   selector: 'app-tabs',
@@ -6,7 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
+  cartItemCount: BehaviorSubject<number>;
+  @ViewChild('cart', {static: false, read: ElementRef})fab: ElementRef;
 
-  constructor() {}
+  constructor(private cartMarketplaceService: CartMarketplaceService) {
+    this.cartItemCount = this.cartMarketplaceService.getCartItemCount();
+  }
 
 }

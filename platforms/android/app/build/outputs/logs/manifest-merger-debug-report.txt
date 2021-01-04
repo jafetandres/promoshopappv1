@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:2:1-122:12
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/382416b98310c215b09931a71035c3ea/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-messaging:17.3.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.3.aar/3b41add4801b109f46d1534529c28c2b/AndroidManifest.xml:17:1-37:12
@@ -25,54 +25,54 @@ MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jafetandresgalve
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/7ddcab80d59c5a463e431b15d708c23d/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/7cdf4882054d075993d60d7977ce681f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/AndroidManifest.xml:17:1-22:12
-MERGED from [:CordovaLib] /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
+MERGED from [:CordovaLib] /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/38f8698211370c4ed148afb8bc9edb69/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/40eb6a4f15787f53e34c744e41cecd56/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/82763c139e58571f0cdba5c4db700aff/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1ec4217506ed38a2a5d6c373dd413417/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
 	package
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:98-130
-		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:98-130
+		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:70-97
-		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:70-97
+		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
 	android:hardwareAccelerated
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:131-189
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:131-189
 	android:versionCode
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:2:46-69
-		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:46-69
+		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
 supports-screens
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:3:5-191
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:3:5-191
 	android:largeScreens
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:3:49-76
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:3:49-76
 	android:smallScreens
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:3:132-159
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:3:132-159
 	android:normalScreens
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:3:77-105
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:3:77-105
 	android:xlargeScreens
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:3:160-188
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:3:160-188
 	android:resizeable
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:3:106-131
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:3:106-131
 	android:anyDensity
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
 uses-permission#android.permission.INTERNET
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:16:5-67
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:16:5-67
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:5:5-21:19
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:5:5-21:19
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:48:5-120:19
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:48:5-120:19
 MERGED from [com.google.firebase:firebase-messaging:17.3.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.3.aar/3b41add4801b109f46d1534529c28c2b/AndroidManifest.xml:22:5-35:19
@@ -100,78 +100,78 @@ MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jafetandr
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:22:5-26:19
 	android:supportsRtl
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:5:175-201
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:5:175-201
 	android:label
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:5:81-113
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:5:81-113
 	android:hardwareAccelerated
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
 	android:icon
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:5:53-80
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:5:53-80
 	android:networkSecurityConfig
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:5:114-174
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:5:114-174
 activity#test.promoshop.apptest.MainActivity
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
 	android:label
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:6:97-134
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:6:97-134
 	android:launchMode
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:6:135-165
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:6:135-165
 	android:windowSoftInputMode
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:6:257-299
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:6:257-299
 	android:configChanges
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:6:19-96
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:6:19-96
 	android:theme
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:6:194-256
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:6:194-256
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:6:166-193
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:6:166-193
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:7:13-10:29
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:7:13-10:29
 	android:label
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:7:28-65
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:7:28-65
 action#android.intent.action.MAIN
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:8:17-69
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:8:17-69
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:8:25-66
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:8:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
 amazon:enable-feature
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:12:9-159
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:12:9-159
 	xmlns:amazon
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:12:100-156
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:12:100-156
 	android:required
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:12:75-99
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:12:75-99
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:12:32-74
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:12:32-74
 service#com.onesignal.ADMMessageHandler
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:13:9-92
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:13:9-92
 	android:exported
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:13:18-42
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:13:18-42
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:13:43-89
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:13:43-89
 receiver#com.onesignal.ADMMessageHandler$Receiver
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:14:9-20:20
 	android:permission
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:14:75-139
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:14:75-139
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:14:19-74
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:14:19-74
 intent-filter#com.amazon.device.messaging.intent.RECEIVE+com.amazon.device.messaging.intent.REGISTRATION+test.promoshop.pushapp001
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:15:13-19:29
 action#com.amazon.device.messaging.intent.REGISTRATION
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:16:17-90
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:16:17-90
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:16:25-87
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:16:25-87
 action#com.amazon.device.messaging.intent.RECEIVE
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:17:17-85
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:17:17-85
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:17:25-82
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:17:25-82
 category#test.promoshop.pushapp001
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:18:17-70
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:18:17-70
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:18:27-67
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:18:27-67
 uses-sdk
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:22:5-74
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:22:5-74
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:5-74
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:5-74
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:4:5-44
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:4:5-44
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/382416b98310c215b09931a71035c3ea/AndroidManifest.xml:20:5-44
@@ -214,8 +214,8 @@ MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jafetandres
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/7cdf4882054d075993d60d7977ce681f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/AndroidManifest.xml:20:5-44
-MERGED from [:CordovaLib] /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
-MERGED from [:CordovaLib] /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/38f8698211370c4ed148afb8bc9edb69/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/38f8698211370c4ed148afb8bc9edb69/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/40eb6a4f15787f53e34c744e41cecd56/AndroidManifest.xml:20:5-44
@@ -224,27 +224,27 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jafetandresgalvezqueza
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/82763c139e58571f0cdba5c4db700aff/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1ec4217506ed38a2a5d6c373dd413417/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1ec4217506ed38a2a5d6c373dd413417/AndroidManifest.xml:20:5-44
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:22:5-74
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:5-74
 	android:targetSdkVersion
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:22:42-71
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:42-71
 	android:minSdkVersion
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:22:15-41
-		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:15-41
+		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
 uses-permission#com.amazon.device.messaging.permission.RECEIVE
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:23:5-86
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:23:5-86
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:23:22-83
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:23:22-83
 permission#test.promoshop.pushapp001.permission.RECEIVE_ADM_MESSAGE
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:24:5-127
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:24:5-127
 	android:protectionLevel
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:24:89-124
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:24:89-124
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:24:17-88
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:24:17-88
 uses-permission#test.promoshop.pushapp001.permission.RECEIVE_ADM_MESSAGE
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:25:5-96
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:25:5-96
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/AndroidManifest.xml:25:22-93
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:25:22-93
 permission#${applicationId}.permission.C2D_MESSAGE
 ADDED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:7:5-9:47
 	android:protectionLevel

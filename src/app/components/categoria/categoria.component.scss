@@ -49,15 +49,21 @@
 
 ion-card {
   // height: 200px;
- 
- margin-bottom: 10px;
-  ion-card-header{
-    ion-card-title{
-      font-size: 20px;
+  // width: 50%;
+  // background: rgba(144, 108, 69, 0.548);
+  margin-bottom: 0px;
+  ion-card-header {
+    padding-top: 2px;
+    ion-card-subtitle{
+      font-size: 8px;
+    }
+    ion-card-title {
+      font-size: 12px;
     }
   }
-  img{
-    // width: 100px;
-    height: 100px;
+  img {
+  
+    width: 75px;
+    height: 75px;
   }
 }

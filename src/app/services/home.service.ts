@@ -18,4 +18,7 @@ export class HomeService {
   getBanners(){
     return this.http.get(`${URL}/banner/`).pipe( tap(console.log));
   }
+  getProductosMarketPlace(){
+    return this.http.get(`${URL}/productosMasVendidos/`).pipe( tap(console.log));
+  }
 }

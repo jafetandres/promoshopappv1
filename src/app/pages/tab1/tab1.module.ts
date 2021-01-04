@@ -16,7 +16,6 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     ComponentsModule,
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
-    
   ],
   declarations: [Tab1Page]
 })

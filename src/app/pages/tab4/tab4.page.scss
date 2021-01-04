@@ -1,3 +1,14 @@
+ion-header{
+    background-color: orange;
+    ion-toolbar{
+        background-color: red;
+        ion-title{
+            padding-left: 10px ;
+            font-size: 20px;
+        }
+    }
+}
+
 ion-item{
     padding-top: 15px;
     padding-bottom: 15px;

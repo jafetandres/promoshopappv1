@@ -9,7 +9,7 @@ export class CategoriasComponent implements OnInit {
   @Input() categorias: any;
 
   slideOpts = {
-    slidesPerView: 1.7,
+    slidesPerView: 2.5,
     freeMode: true
   };
 

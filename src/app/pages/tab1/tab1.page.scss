@@ -1,3 +1,5 @@
+
+
 ion-header {
     ion-toolbar {
         // --background: aqua;
@@ -37,34 +39,16 @@ ion-slides {
         margin-bottom: 0px;
     }
     ion-slides {
-        margin: 0;
-        ion-slide {
-            ion-card {
-                img{
-                    height: 150px;
-                    width: 100%;
-                }
-                ion-card-header{
-                    margin: 0;
-                    padding: 5px;
-                    text-align: left;
-                    ion-card-title{
-                        font-size: 15px;
-                    }
-                    ion-card-subtitle{
-                        text-transform:initial;
-                        font-weight: 500;
+        // padding-right: 20px;
+        // background-color: saddlebrown;
 
-                    }
-                }
-            }
+    //    margin-left: 20px;
+        ion-slide {
+            // width: 200px !important;
+            // height: 300px !important;
         }
     }
 }
-
-// ion-icon {
-//     font-size: 35px;
-// }
 
 .card-principal {
     border-radius: 0;
@@ -147,11 +131,3 @@ ion-slides {
     }
 }
 
-// .card-principal-header {
-//     width: 100% !important;
-// }
-
-// .slide-image {
-//     width: 100%;
-//     height: 100% !important;
-// }

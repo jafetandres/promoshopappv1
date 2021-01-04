@@ -8,12 +8,31 @@ import { Categoria } from '../../interfaces/interfaces';
 })
 export class CategoriaComponent implements OnInit {
 
-  @Input() categoria: Categoria= {};
-  
-  constructor() { 
-    console.log("entro a categoria");
-    }
+  @Input() categoria: Categoria = {};
+  nombre: string;
+  backgroundColor: string;
 
-  ngOnInit() {}
+  constructor() {
+  }
+
+  ngOnInit() {
+
+    if (this.categoria.nombre.split(" ")[0] == 'Comida') {
+      this.categoria.nombre = this.categoria.nombre.split(" ")[1];
+      if (this.categoria.nombre == 'China') {
+        this.backgroundColor = 'rgb(135, 100, 68, 0.548)';
+      }
+      if (this.categoria.nombre == 'Mexicana') {
+        this.backgroundColor = 'rgb(160, 55, 35, 0.548)';
+      }
+      if (this.categoria.nombre == 'Rapida') {
+        this.backgroundColor = 'rgb(90, 132, 65, 0.548)';
+      }
+     
+    }
+    if (this.categoria.nombre == 'Mariscos') {
+      this.backgroundColor = 'rgb(132, 140, 44, 0.548)';
+    }
+  }
 
 }

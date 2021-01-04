@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
             "map": [
                 {

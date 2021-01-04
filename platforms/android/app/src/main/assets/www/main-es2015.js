@@ -757,6 +757,7 @@ const environment = {
     production: false,
     url: 'https://promoshop.app/rest'
     // url: 'http://192.168.1.63:8080/NGNDigitalGuide/rest'
+    // url: 'http://127.0.0.1:8000/api/v1'
 };
 /*
  * For easier debugging in development mode, you can import the following file

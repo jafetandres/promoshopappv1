@@ -1,0 +1,36 @@
+.card-producto {
+    // background-color: red;
+    border-radius: 0px;
+   
+    height: 200px;
+    width: 300px;
+    margin-right: 0px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    ion-slides {
+        ion-slide{
+            // background-color: green;
+            height: 150px !important;
+            width: 300px !important;
+            img{
+                // background-color: royalblue;
+                height: 150px !important;
+                width: 300px !important;
+            }
+        }
+    }
+    
+    ion-card-header{
+        margin: 0;
+        padding: 5px;
+        text-align: left;
+        ion-card-title{
+            font-size: 15px;
+        }
+        ion-card-subtitle{
+            text-transform:initial;
+            font-weight: 500;
+
+        }
+    }
+}

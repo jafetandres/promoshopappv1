@@ -1,6 +1,6 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[41],{
 
-/***/ "./node_modules/@ionic/core/dist/esm/ion-toggle.entry.js":
+/***/ "IUOf":
 /*!***************************************************************!*\
   !*** ./node_modules/@ionic/core/dist/esm/ion-toggle.entry.js ***!
   \***************************************************************/
@@ -10,11 +10,11 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ion_toggle", function() { return Toggle; });
-/* harmony import */ var _index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-e806d1f6.js */ "./node_modules/@ionic/core/dist/esm/index-e806d1f6.js");
-/* harmony import */ var _ionic_global_9d5c8ee3_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ionic-global-9d5c8ee3.js */ "./node_modules/@ionic/core/dist/esm/ionic-global-9d5c8ee3.js");
-/* harmony import */ var _helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers-fde0057c.js */ "./node_modules/@ionic/core/dist/esm/helpers-fde0057c.js");
-/* harmony import */ var _haptic_27b3f981_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./haptic-27b3f981.js */ "./node_modules/@ionic/core/dist/esm/haptic-27b3f981.js");
-/* harmony import */ var _theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./theme-ff3fc52f.js */ "./node_modules/@ionic/core/dist/esm/theme-ff3fc52f.js");
+/* harmony import */ var _index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-e806d1f6.js */ "A36C");
+/* harmony import */ var _ionic_global_9d5c8ee3_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ionic-global-9d5c8ee3.js */ "Zgba");
+/* harmony import */ var _helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers-90f46169.js */ "QPqR");
+/* harmony import */ var _haptic_27b3f981_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./haptic-27b3f981.js */ "qULd");
+/* harmony import */ var _theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./theme-ff3fc52f.js */ "74mu");
 
 
 
@@ -57,7 +57,6 @@ const Toggle = class {
     this.value = 'on';
     this.onClick = (ev) => {
       ev.preventDefault();
-      ev.stopPropagation();
       if (this.lastDrag + 300 < Date.now()) {
         this.checked = !this.checked;
       }
@@ -82,7 +81,7 @@ const Toggle = class {
     }
   }
   async connectedCallback() {
-    this.gesture = (await Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ./index-f49d994d.js */ "./node_modules/@ionic/core/dist/esm/index-f49d994d.js"))).createGesture({
+    this.gesture = (await Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ./index-f49d994d.js */ "iWo5"))).createGesture({
       el: this.el,
       gestureName: 'toggle',
       gesturePriority: 100,
@@ -136,9 +135,9 @@ const Toggle = class {
   render() {
     const { activated, color, checked, disabled, el, inputId, name } = this;
     const mode = Object(_ionic_global_9d5c8ee3_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this);
-    const { label, labelId, labelText } = Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["c"])(el, inputId);
+    const { label, labelId, labelText } = Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["c"])(el, inputId);
     const value = this.getValue();
-    Object(_helpers_fde0057c_js__WEBPACK_IMPORTED_MODULE_2__["d"])(true, el, name, (checked ? value : ''), disabled);
+    Object(_helpers_90f46169_js__WEBPACK_IMPORTED_MODULE_2__["d"])(true, el, name, (checked ? value : ''), disabled);
     return (Object(_index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_e806d1f6_js__WEBPACK_IMPORTED_MODULE_0__["H"], { onClick: this.onClick, "aria-labelledby": label ? labelId : null, "aria-checked": `${checked}`, "aria-hidden": disabled ? 'true' : null, role: "switch", class: Object(_theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_4__["c"])(color, {
         [mode]: true,
         'in-item': Object(_theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_4__["h"])('ion-item', el),

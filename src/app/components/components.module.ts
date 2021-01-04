@@ -6,6 +6,7 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { EmpresaComponent } from './empresa/empresa.component';
 import { HeaderBackComponent } from './header-back/header-back.component';
+import { ProductoInSlideComponent } from './producto-in-slide/producto-in-slide.component';
 
 
 
@@ -14,11 +15,14 @@ import { HeaderBackComponent } from './header-back/header-back.component';
     CategoriaComponent,
     CategoriasComponent,
     EmpresaComponent,
-    HeaderBackComponent
+    HeaderBackComponent,
+    ProductoInSlideComponent
+
   ],
   exports:[
     CategoriasComponent,
-    HeaderBackComponent
+    HeaderBackComponent,
+    ProductoInSlideComponent
   ],
   imports: [
     CommonModule,

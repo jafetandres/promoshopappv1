@@ -1123,6 +1123,7 @@
       var environment = {
         production: false,
         url: 'https://promoshop.app/rest' // url: 'http://192.168.1.63:8080/NGNDigitalGuide/rest'
+        // url: 'http://127.0.0.1:8000/api/v1'
 
       };
       /*
