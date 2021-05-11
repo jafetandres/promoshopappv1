@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_screen.png.flat",
-        "source": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png"
-    },
-    {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_screen.png.flat",
+        "source": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png"
     },
     {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -52,12 +52,12 @@
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/res/layout/notification_template_icon_group.xml"
     },
     {
-        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
-    },
-    {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_light.xml.flat",
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-hdpi_screen.png.flat",
@@ -102,6 +102,10 @@
     {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_focused.xml.flat",
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable_dummy_mylocation_button_shadow.xml.flat",
+        "source": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/res/drawable/dummy_mylocation_button_shadow.xml"
     },
     {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
@@ -240,12 +244,12 @@
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/drawable-mdpi-v4/googleg_standard_color_18.png"
     },
     {
-        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
-        "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/res/drawable/notification_bg.xml"
-    },
-    {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
+        "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_normal.xml.flat",
@@ -260,24 +264,28 @@
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
-        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/layout_onesignal_bgimage_notif_layout.xml.flat",
-        "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/res/layout/onesignal_bgimage_notif_layout.xml"
+        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/layout_dummy_infowindow.xml.flat",
+        "source": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/res/layout/dummy_infowindow.xml"
     },
     {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/7cdf4882054d075993d60d7977ce681f/res/layout/notification_template_media_custom.xml"
     },
     {
+        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/layout_onesignal_bgimage_notif_layout.xml.flat",
+        "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/res/layout/onesignal_bgimage_notif_layout.xml"
+    },
+    {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
-        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
-        "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/drawable/common_google_signin_btn_icon_light.xml"
-    },
-    {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
+        "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_normal.xml.flat",
@@ -286,6 +294,10 @@
     {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
         "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/res/merged/debug/drawable_dummy_my_location_button.png.flat",
+        "source": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/res/drawable/dummy_my_location_button.png"
     },
     {
         "merged": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshop/platforms/android/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",

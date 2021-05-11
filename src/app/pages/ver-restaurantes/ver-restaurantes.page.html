@@ -1,0 +1,27 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/main" 
+        text="" 
+        color="promoshop"
+        mode="ios"
+        ></ion-back-button>
+      </ion-buttons>
+      <ion-title>Comida</ion-title>
+      
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-searchbar placeholder="Buscar restaurante" showCancelButton="focus" mode="md" animated ></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="recargar($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <app-empresa-horizontal *ngFor="let restaurante of restaurantes" [empresa]="restaurante"></app-empresa-horizontal>
+    <ion-infinite-scroll threshold="25%" [disabled]="!habilitado" position="bottom" (ionInfinite)="siguientes($event)">
+        <ion-infinite-scroll-content loadingSpinner="bubbles">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

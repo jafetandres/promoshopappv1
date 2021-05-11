@@ -1,38 +1,47 @@
 -- Merging decision tree log ---
+meta-data#com.google.android.geo.API_KEY
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:21:9-115
+	android:value
+		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:21:66-112
+	android:name
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:21:20-65
 manifest
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-35:12
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:2:1-122:12
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/382416b98310c215b09931a71035c3ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.firebase:firebase-messaging:17.3.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.3.aar/3b41add4801b109f46d1534529c28c2b/AndroidManifest.xml:17:1-37:12
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/10f1b7b39f9ff439af87a11f7d6cf443/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/769907fd848c1d38df9706120dc42753/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:17:1-59:12
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/c9ce0842d934e0a3ec80b927cc7856a8/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/7aa112ffb5df85c4da0b2437480bd9bb/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/cab9998ae14c7d7a1a1bbf5dad87d73c/AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0efbcb2adff0ab0adee089d4f4a4fe25/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/0ecb3242841b13f565751e72a6e6d678/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/c635a4466189dfd0538fef2e2493df61/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/b36594ceddfc4bafd3afccc780c7ca3a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/1e73852d18a60784fd9611c8643c8bea/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:customtabs:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/554d129e0f76f4b009170cd6583078f3/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/9ab53bc3f9b60ccc4b9717b30d9af4f5/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/7ddcab80d59c5a463e431b15d708c23d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/382416b98310c215b09931a71035c3ea/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/7cdf4882054d075993d60d7977ce681f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/AndroidManifest.xml:17:1-22:12
+MERGED from [:tbxml-android:] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/tbxml-android.aar/0ba51b60e08b67c217bf75fbccbea4a4/AndroidManifest.xml:2:1-11:12
 MERGED from [:CordovaLib] /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/38f8698211370c4ed148afb8bc9edb69/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/40eb6a4f15787f53e34c744e41cecd56/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/82763c139e58571f0cdba5c4db700aff/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1ec4217506ed38a2a5d6c373dd413417/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:2:98-130
 		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
@@ -67,36 +76,40 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:16:5-67
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:16:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:5:5-21:19
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:5:5-24:19
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:48:5-120:19
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:48:5-120:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.firebase:firebase-messaging:17.3.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.3.aar/3b41add4801b109f46d1534529c28c2b/AndroidManifest.xml:22:5-35:19
 MERGED from [com.google.firebase:firebase-messaging:17.3.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.3.aar/3b41add4801b109f46d1534529c28c2b/AndroidManifest.xml:22:5-35:19
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/10f1b7b39f9ff439af87a11f7d6cf443/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/10f1b7b39f9ff439af87a11f7d6cf443/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/769907fd848c1d38df9706120dc42753/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/769907fd848c1d38df9706120dc42753/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:28:5-57:19
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:28:5-57:19
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/c9ce0842d934e0a3ec80b927cc7856a8/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/c9ce0842d934e0a3ec80b927cc7856a8/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/7aa112ffb5df85c4da0b2437480bd9bb/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/7aa112ffb5df85c4da0b2437480bd9bb/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/cab9998ae14c7d7a1a1bbf5dad87d73c/AndroidManifest.xml:9:5-15:19
 MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/cab9998ae14c7d7a1a1bbf5dad87d73c/AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0efbcb2adff0ab0adee089d4f4a4fe25/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0efbcb2adff0ab0adee089d4f4a4fe25/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/0ecb3242841b13f565751e72a6e6d678/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/0ecb3242841b13f565751e72a6e6d678/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/c635a4466189dfd0538fef2e2493df61/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/c635a4466189dfd0538fef2e2493df61/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:22:5-26:19
 	android:supportsRtl
@@ -169,35 +182,51 @@ category#test.promoshop.pushapp001
 ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:18:17-70
 	android:name
 		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:18:27-67
+meta-data#com.google.android.gms.version
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:9-122
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:66-119
+	android:name
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:20-65
+uses-library#org.apache.http.legacy
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:23:9-88
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:33:9-35:40
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:23:61-85
+	android:name
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:23:23-60
 uses-sdk
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:5-74
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:5-74
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:25:5-74
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:25:5-74
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:4:5-44
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:4:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/382416b98310c215b09931a71035c3ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/382416b98310c215b09931a71035c3ea/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-messaging:17.3.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.3.aar/3b41add4801b109f46d1534529c28c2b/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-messaging:17.3.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.3.aar/3b41add4801b109f46d1534529c28c2b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/10f1b7b39f9ff439af87a11f7d6cf443/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/10f1b7b39f9ff439af87a11f7d6cf443/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/769907fd848c1d38df9706120dc42753/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/769907fd848c1d38df9706120dc42753/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/c9ce0842d934e0a3ec80b927cc7856a8/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/c9ce0842d934e0a3ec80b927cc7856a8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/7aa112ffb5df85c4da0b2437480bd9bb/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/7aa112ffb5df85c4da0b2437480bd9bb/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/cab9998ae14c7d7a1a1bbf5dad87d73c/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/cab9998ae14c7d7a1a1bbf5dad87d73c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0efbcb2adff0ab0adee089d4f4a4fe25/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0efbcb2adff0ab0adee089d4f4a4fe25/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/0ecb3242841b13f565751e72a6e6d678/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/0ecb3242841b13f565751e72a6e6d678/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/bf75e30ab3bf0cd2c6404c8a6b83f6c2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/281514393f57d4e7162e800408a47cdb/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/c635a4466189dfd0538fef2e2493df61/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/c635a4466189dfd0538fef2e2493df61/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/b36594ceddfc4bafd3afccc780c7ca3a/AndroidManifest.xml:20:5-44
@@ -210,10 +239,14 @@ MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jafetandresgalve
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/9ab53bc3f9b60ccc4b9717b30d9af4f5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/7ddcab80d59c5a463e431b15d708c23d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/7ddcab80d59c5a463e431b15d708c23d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/382416b98310c215b09931a71035c3ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/382416b98310c215b09931a71035c3ea/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/7cdf4882054d075993d60d7977ce681f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/7cdf4882054d075993d60d7977ce681f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/973de8dae8a9df827053e0fc06a3ad9a/AndroidManifest.xml:20:5-44
+MERGED from [:tbxml-android:] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/tbxml-android.aar/0ba51b60e08b67c217bf75fbccbea4a4/AndroidManifest.xml:7:5-9:41
+MERGED from [:tbxml-android:] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/tbxml-android.aar/0ba51b60e08b67c217bf75fbccbea4a4/AndroidManifest.xml:7:5-9:41
 MERGED from [:CordovaLib] /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/38f8698211370c4ed148afb8bc9edb69/AndroidManifest.xml:20:5-44
@@ -224,27 +257,61 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jafetandresgalvezqueza
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/82763c139e58571f0cdba5c4db700aff/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1ec4217506ed38a2a5d6c373dd413417/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1ec4217506ed38a2a5d6c373dd413417/AndroidManifest.xml:20:5-44
-INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:5-74
+INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:25:5-74
 	android:targetSdkVersion
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:42-71
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:25:42-71
 	android:minSdkVersion
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:22:15-41
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:25:15-41
 		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml
 uses-permission#com.amazon.device.messaging.permission.RECEIVE
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:23:5-86
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:26:5-86
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:23:22-83
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:26:22-83
 permission#test.promoshop.pushapp001.permission.RECEIVE_ADM_MESSAGE
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:24:5-127
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:27:5-127
 	android:protectionLevel
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:24:89-124
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:27:89-124
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:24:17-88
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:27:17-88
 uses-permission#test.promoshop.pushapp001.permission.RECEIVE_ADM_MESSAGE
-ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:25:5-96
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:28:5-96
 	android:name
-		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:25:22-93
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:28:22-93
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:29:5-79
+MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:24:5-79
+MERGED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:29:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:30:5-81
+	android:name
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:30:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:31:5-79
+	android:name
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:31:22-76
+uses-feature#0x00020000
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:32:5-78
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:26:5-28:35
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/30bf7badde216c6bb4f31e1fea8e4ed3/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:32:19-51
+	android:required
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:32:52-75
+uses-feature#android.hardware.location
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:33:5-62
+	android:name
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:33:19-59
+uses-feature#android.hardware.location.gps
+ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:34:5-66
+	android:name
+		ADDED from /Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/AndroidManifest.xml:34:19-63
 permission#${applicationId}.permission.C2D_MESSAGE
 ADDED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:7:5-9:47
 	android:protectionLevel
@@ -281,12 +348,6 @@ uses-permission#android.permission.VIBRATE
 ADDED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:23:5-66
 	android:name
 		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:23:22-63
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/47891438c2beb9f7570705d35c457283/AndroidManifest.xml:22:5-79
-	android:name
-		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:24:22-76
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [com.onesignal:OneSignal:3.15.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/OneSignal-3.15.3.aar/016dd43d03377d9f9ff2b80c438c11e0/AndroidManifest.xml:29:5-81
 	android:name
@@ -557,9 +618,3 @@ ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/jafetandresgalvez
 		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/cab9998ae14c7d7a1a1bbf5dad87d73c/AndroidManifest.xml:14:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/cab9998ae14c7d7a1a1bbf5dad87d73c/AndroidManifest.xml:11:13-77
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a2f9651a637da294921dc34226d38bdd/AndroidManifest.xml:24:13-58

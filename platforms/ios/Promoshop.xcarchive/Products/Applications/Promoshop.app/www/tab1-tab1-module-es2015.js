@@ -27,8 +27,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _raw_loader_tab1_page_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./tab1.page.html */ "p9Ql");
 /* harmony import */ var _tab1_page_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tab1.page.scss */ "JGGF");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var src_app_services_httpgenerico_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/httpgenerico.service */ "StRl");
-/* harmony import */ var _services_home_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/home.service */ "nr5L");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var src_app_services_httpgenerico_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/httpgenerico.service */ "StRl");
+/* harmony import */ var _services_home_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../services/home.service */ "nr5L");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic/angular */ "TEn/");
+/* harmony import */ var _services_restaurante_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../services/restaurante.service */ "LqXF");
+
+
+
 
 
 
@@ -36,30 +42,46 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let Tab1Page = class Tab1Page {
-    constructor(homeService, httpgenerico) {
+    constructor(homeService, restauranteService, httpgenerico, router, navCtrl) {
         this.homeService = homeService;
+        this.restauranteService = restauranteService;
         this.httpgenerico = httpgenerico;
+        this.router = router;
+        this.navCtrl = navCtrl;
         this.buttonsSlide = {
             slidesPerView: 3.5
         };
         this.marketplaceSlide = {
             slidesPerView: 1.2
         };
-        this.publicidadSlide = {
-            touchReleaseOnEdges: true
+        this.bannerHome = {
+            touchReleaseOnEdges: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            speed: 1500
         };
     }
     ngOnInit() {
-        this.categorias = this.homeService.getCategorias();
+        this.categorias = this.homeService.getCategoriasComida();
         this.banners = this.homeService.getBanners();
-        this.productosMarketPlace = this.homeService.getProductosMarketPlace();
+        this.productosMarketplace = this.homeService.getProductosMarketplace();
+        this.licores = this.homeService.getLicores();
         // let peticion = { pagina: 1, query: "todos" };
         // console.log(this.httpgenerico.postAuth("procesador/getComprasUsuario", peticion));
     }
+    mostrarRestaurantes() {
+        // this.navCtrl.(VerRestaurantesPage);
+        this.router.navigate(['/ver-restaurantes']);
+    }
 };
 Tab1Page.ctorParameters = () => [
-    { type: _services_home_service__WEBPACK_IMPORTED_MODULE_5__["HomeService"] },
-    { type: src_app_services_httpgenerico_service__WEBPACK_IMPORTED_MODULE_4__["HttpgenericoService"] }
+    { type: _services_home_service__WEBPACK_IMPORTED_MODULE_6__["HomeService"] },
+    { type: _services_restaurante_service__WEBPACK_IMPORTED_MODULE_8__["RestauranteService"] },
+    { type: src_app_services_httpgenerico_service__WEBPACK_IMPORTED_MODULE_5__["HttpgenericoService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["NavController"] }
 ];
 Tab1Page = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
@@ -225,14 +247,17 @@ let HomeService = class HomeService {
     constructor(http) {
         this.http = http;
     }
-    getCategorias() {
-        return this.http.get(`${URL}/categoriaEmpresaProducto/`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(console.log));
-    }
     getBanners() {
-        return this.http.get(`${URL}/banner/`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(console.log));
+        return this.http.get(`${URL}/listabannerhome`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(console.log));
     }
-    getProductosMarketPlace() {
-        return this.http.get(`${URL}/productosMasVendidos/`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(console.log));
+    getCategoriasComida() {
+        return this.http.get(`${URL}/categoriascomidahome`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(console.log));
+    }
+    getProductosMarketplace() {
+        return this.http.get(`${URL}/productosmarketplacehome`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(console.log));
+    }
+    getLicores() {
+        return this.http.get(`${URL}/licoreshome`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(console.log));
     }
 };
 HomeService.ctorParameters = () => [
@@ -257,7 +282,7 @@ HomeService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-chip>\n      <ion-icon name=\"navigate-circle-outline\"></ion-icon>\n      <ion-label>Av. Remigio Crespo 13-18</ion-label>\n    </ion-chip>\n    <ion-buttons slot=\"end\">\n      <ion-button id=\"changeText\" onClick=\"toggleText()\">\n        <ion-icon name=\"options-outline\" color=\"dark\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content color=\"light\">\n  <ion-card class=\"card-principal\">\n    <ion-card-header>\n      <ng-container *ngFor=\"let banner of banners | async\">\n        <ion-slides pager=\"ios\" [options]=\"publicidadSlide\" *ngIf=\"banner.pantalla == 'home'\">\n          <ion-slide *ngFor=\"let portada of banner.portadas\">\n            <img src=\"{{portada.imagen}}\">\n          </ion-slide>\n        </ion-slides>\n      </ng-container>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-slides pager=\"false\" [options]=\"buttonsSlide\">\n        <ion-slide>\n          <ion-button (click)=\"onClick()\" fill=\"clear\">\n            <div>\n              <ion-icon src=\"/assets/icon/comida-icon.svg\"></ion-icon>\n              <small> Comida</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n        <ion-slide>\n          <ion-button (click)=\"onClick()\" fill=\"clear\">\n            <div>\n              <ion-icon src=\"/assets/icon/express-icon.svg\"></ion-icon>\n              <small>Envio Express</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n        <ion-slide>\n          <ion-button (click)=\"onClick()\" fill=\"clear\">\n            <div>\n              <ion-icon src=\"/assets/icon/raspa-gana-icon.svg\"></ion-icon>\n              <small>Raspa y Gana</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n        <ion-slide>\n          <ion-button (click)=\"onClick()\" fill=\"clear\">\n            <div>\n              <ion-icon src=\"/assets/icon/ofertas-icon.svg\"></ion-icon>\n              <small> Ofertas</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n        <ion-slide>\n          <ion-button (click)=\"onClick()\" fill=\"clear\" color=\"dark\">\n            <div>\n              <ion-icon src=\"/assets/icon/servicios-icon.svg\"></ion-icon>\n              <small> Servicios</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n      </ion-slides>\n    </ion-card-content>\n  </ion-card>\n\n\n  <!-- Refresher -->\n\n\n  <!-- Categorias -->\n  <app-categorias [categorias]=\"categorias\"></app-categorias>\n  <ion-card class=\"card-container\">\n    <h4>Marketplace</h4>\n    <ion-slides mode=\"ios\" pager=\"false\" [options]=\"marketplaceSlide\">\n      <ion-slide *ngFor=\"let producto of productosMarketPlace | async\">\n        <app-producto-in-slide [producto]=\"producto\"></app-producto-in-slide>\n      </ion-slide>\n    </ion-slides>\n  </ion-card>\n</ion-content>");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-chip>\n      <ion-icon name=\"navigate-circle-outline\"></ion-icon>\n      <ion-label>Av. Remigio Crespo 13-18</ion-label>\n    </ion-chip>\n    <ion-buttons slot=\"end\">\n      <ion-button id=\"changeText\" onClick=\"toggleText()\">\n        <ion-icon name=\"options-outline\" color=\"dark\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content color=\"light\">\n  <ion-card class=\"card-principal\">\n    <ion-card-header>\n      <ng-container *ngFor=\"let banner of banners | async\">\n        <ion-slides pager=\"ios\" [options]=\"bannerHome\" *ngIf=\"banner.pantalla == 'home'\">\n          <ion-slide *ngFor=\"let portada of banner.portadas\">\n            <img src=\"{{portada.imagen}}\">\n          </ion-slide>\n        </ion-slides>\n      </ng-container>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-slides pager=\"false\" [options]=\"buttonsSlide\">\n        <ion-slide>\n          <ion-button (click)=\"mostrarRestaurantes()\" fill=\"clear\">\n            <div>\n              <ion-icon src=\"/assets/icon/comida-icon.svg\"></ion-icon>\n              <small> Comida</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n        <ion-slide>\n          <ion-button (click)=\"onClick()\" fill=\"clear\">\n            <div>\n              <ion-icon src=\"/assets/icon/express-icon.svg\"></ion-icon>\n              <small>Envio Express</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n        <ion-slide>\n          <ion-button (click)=\"onClick()\" fill=\"clear\">\n            <div>\n              <ion-icon src=\"/assets/icon/raspa-gana-icon.svg\"></ion-icon>\n              <small>Raspa y Gana</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n        <ion-slide>\n          <ion-button (click)=\"onClick()\" fill=\"clear\">\n            <div>\n              <ion-icon src=\"/assets/icon/ofertas-icon.svg\"></ion-icon>\n              <small> Ofertas</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n        <ion-slide>\n          <ion-button (click)=\"onClick()\" fill=\"clear\" color=\"dark\">\n            <div>\n              <ion-icon src=\"/assets/icon/servicios-icon.svg\"></ion-icon>\n              <small> Servicios</small>\n            </div>\n          </ion-button>\n        </ion-slide>\n      </ion-slides>\n    </ion-card-content>\n  </ion-card>\n\n\n  <!-- Refresher -->\n\n\n  <!-- Categorias -->\n  <app-categorias [categorias]=\"categorias\"></app-categorias>\n  <ion-card class=\"card-container\">\n    <h4>Marketplace</h4>\n    <ion-slides mode=\"ios\" pager=\"false\" [options]=\"marketplaceSlide\">\n      <ion-slide *ngFor=\"let producto of productosMarketplace | async\">\n        <app-producto-in-slide [producto]=\"producto\"></app-producto-in-slide>\n      </ion-slide>\n    </ion-slides>\n  </ion-card>\n  <ion-card class=\"card-container\">\n    <h4>Licores</h4>\n    <ion-slides mode=\"ios\" pager=\"false\" [options]=\"marketplaceSlide\">\n      <ion-slide *ngFor=\"let licor of licores | async\">\n        <app-producto-in-slide [producto]=\"licor\"></app-producto-in-slide>\n      </ion-slide>\n    </ion-slides>\n  </ion-card>\n</ion-content>");
 
 /***/ }),
 

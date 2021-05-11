@@ -29,11 +29,8 @@ export class PushService {
   }
 
   configuracionInicial() {
-
     this.oneSignal.startInit('0603627e-f578-4f08-b7a8-48feb261c7c8', '226303211374');
-
     this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.Notification);
-
     this.oneSignal.handleNotificationReceived().subscribe((noti) => {
       console.log("notificacion recibida", noti);
       this.notificacionRecibida(noti);
@@ -45,11 +42,12 @@ export class PushService {
     });
 
 
-    // this.oneSignal.getIds().then(info => {
-    //   this.userId = info.userId || 'bb4c4088-3427-44ff-8380-570aa6c1ce1a';
-    //   console.log(this.userId);
-    // });
-
+    this.oneSignal.getIds().then(info => {
+      this.userId = info.userId;
+      // this.storage.set('player_id', this.userId);
+      console.log(this.userId);
+      
+    });
     this.oneSignal.endInit();
   }
 

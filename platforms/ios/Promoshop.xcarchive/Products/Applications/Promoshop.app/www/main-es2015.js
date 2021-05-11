@@ -29,7 +29,7 @@ const environment = {
     production: false,
     // url: 'https://promoshop.app/rest'
     // url: 'http://192.168.1.63:8080/NGNDigitalGuide/rest'
-    url: 'http://192.168.100.8:8000/api/v1',
+    url: 'http://192.168.1.23:8000/api/v1',
     dominio: 'http://192.168.100.8:8000'
 };
 /*
@@ -93,10 +93,11 @@ let PushService = class PushService {
             console.log("notificacion abierta", noti);
             yield this.notificacionRecibida(noti.notification);
         }));
-        // this.oneSignal.getIds().then(info => {
-        //   this.userId = info.userId || 'bb4c4088-3427-44ff-8380-570aa6c1ce1a';
-        //   console.log(this.userId);
-        // });
+        this.oneSignal.getIds().then(info => {
+            this.userId = info.userId;
+            // this.storage.set('player_id', this.userId);
+            console.log(this.userId);
+        });
         this.oneSignal.endInit();
     }
     getUserIdOneSignal() {
@@ -544,6 +545,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_firebase_authentication_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/firebase-authentication/ngx */ "8BtL");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "tyNb");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic/angular */ "TEn/");
+/* harmony import */ var _push_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./push.service */ "H+l1");
+
 
 
 
@@ -554,14 +557,17 @@ __webpack_require__.r(__webpack_exports__);
 
 const URL = _environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].url;
 let UsuarioService = class UsuarioService {
-    constructor(http, storage, firebaseAuthentication, router, navCtrl) {
+    constructor(http, storage, firebaseAuthentication, router, navCtrl, pushService) {
         this.http = http;
         this.storage = storage;
         this.firebaseAuthentication = firebaseAuthentication;
         this.router = router;
         this.navCtrl = navCtrl;
+        this.pushService = pushService;
         this.token = null;
+        this.player_id = null;
         this.usuario = {};
+        this.ubicaciones = [];
     }
     enviarMensaje(number) {
         try {
@@ -576,10 +582,11 @@ let UsuarioService = class UsuarioService {
         const data = { username, password };
         return new Promise(resolve => {
             this.http.post(`${URL}/auth/login/`, data)
-                .subscribe(resp => {
+                .subscribe((resp) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
                 if (resp['key'] != null) {
-                    this.guardarToken(resp['key']);
-                    console.log(resp['key']);
+                    yield this.guardarToken(resp['key']);
+                    yield this.validaToken();
+                    yield this.guardarPlayerId();
                     resolve(true);
                 }
                 else {
@@ -587,29 +594,38 @@ let UsuarioService = class UsuarioService {
                     this.storage.clear();
                     resolve(false);
                 }
-            });
+            }));
         });
     }
     guardarToken(token) {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
             this.token = token;
             yield this.storage.set('token', token);
+            yield this.validaToken();
         });
     }
+    logout() {
+        this.token = null;
+        this.usuario = null;
+        this.storage.clear();
+        this.navCtrl.navigateRoot('/inicio', { animated: true });
+    }
     registro(usuario) {
-        return new Promise(resolve => {
-            this.http.post(`${URL}/auth/registration/`, usuario)
-                .subscribe(resp => {
-                if (resp['key'] != null) {
-                    this.guardarToken(resp['key']);
-                    console.log(resp['key']);
-                    resolve(true);
-                }
-                else {
-                    this.token = null;
-                    this.storage.clear();
-                    resolve(false);
-                }
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            usuario.player_id = yield this.pushService.getUserIdOneSignal();
+            return new Promise(resolve => {
+                this.http.post(`${URL}/auth/registration/`, usuario)
+                    .subscribe((resp) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+                    if (resp['key'] != null) {
+                        yield this.guardarToken(resp['key']);
+                        resolve(true);
+                    }
+                    else {
+                        this.token = null;
+                        this.storage.clear();
+                        resolve(false);
+                    }
+                }));
             });
         });
     }
@@ -632,9 +648,8 @@ let UsuarioService = class UsuarioService {
                 const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                     'Authorization': 'Token ' + this.token
                 });
-                this.http.get(`${URL}/usuario/`, { headers })
+                this.http.get(`${URL}/usuario`, { headers })
                     .subscribe(resp => {
-                    console.log(resp);
                     if (resp['ok']) {
                         this.usuario = resp['usuario'];
                         resolve(true);
@@ -652,13 +667,69 @@ let UsuarioService = class UsuarioService {
             });
         });
     }
+    getUbicacionesUsuario() {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            yield this.cargarToken();
+            if (!this.token) {
+                this.navCtrl.navigateRoot('/inicio', { animated: true });
+            }
+            const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Authorization': 'Token ' + this.token
+            });
+            return this.http.get(`${URL}/listarubicaciones`, { headers });
+        });
+    }
+    getTarjetasUsuario() {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            yield this.cargarToken();
+            if (!this.token) {
+                this.navCtrl.navigateRoot('/inicio', { animated: true });
+            }
+            const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Authorization': 'Token ' + this.token
+            });
+            return this.http.get(`${URL}/listartarjetas`, { headers });
+        });
+    }
+    registrarTarjetasUsuario(tarjeta) {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            yield this.cargarToken();
+            if (!this.token) {
+                this.navCtrl.navigateRoot('/inicio', { animated: true });
+            }
+            const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Authorization': 'Token ' + this.token
+            });
+            return this.http.post(`${URL}/registrartarjeta`, tarjeta, { headers });
+        });
+    }
+    guardarPlayerId() {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            yield this.cargarToken();
+            if (!this.token) {
+                this.navCtrl.navigateRoot('/inicio', { animated: true });
+            }
+            const headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Authorization': 'Token ' + this.token
+            });
+            this.player_id = yield this.pushService.getUserIdOneSignal();
+            // this.player_id = 'prueba123player';
+            const data = { player_id: this.player_id };
+            console.log(this.player_id);
+            this.http.put(`${URL}/actualizarplayerid`, data, { headers })
+                .subscribe(resp => {
+                console.log(resp);
+            });
+        });
+    }
 };
 UsuarioService.ctorParameters = () => [
     { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
     { type: _ionic_storage__WEBPACK_IMPORTED_MODULE_3__["Storage"] },
     { type: _ionic_native_firebase_authentication_ngx__WEBPACK_IMPORTED_MODULE_5__["FirebaseAuthentication"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["NavController"] }
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["NavController"] },
+    { type: _push_service__WEBPACK_IMPORTED_MODULE_8__["PushService"] }
 ];
 UsuarioService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
@@ -713,7 +784,7 @@ const routes = [
     },
     {
         path: 'perfil-usuario',
-        loadChildren: () => Promise.all(/*! import() | pages-perfil-usuario-perfil-usuario-module */[__webpack_require__.e("default~pages-perfil-usuario-perfil-usuario-module~tab1-tab1-module"), __webpack_require__.e("common"), __webpack_require__.e("pages-perfil-usuario-perfil-usuario-module")]).then(__webpack_require__.bind(null, /*! ./pages/perfil-usuario/perfil-usuario.module */ "pMbb")).then(m => m.PerfilUsuarioPageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-perfil-usuario-perfil-usuario-module */[__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-perfil-usuario-perfil-usuario-module")]).then(__webpack_require__.bind(null, /*! ./pages/perfil-usuario/perfil-usuario.module */ "pMbb")).then(m => m.PerfilUsuarioPageModule)
     },
     {
         path: 'modal-ver-producto',
@@ -721,7 +792,35 @@ const routes = [
     },
     {
         path: 'cart-marketplace',
-        loadChildren: () => __webpack_require__.e(/*! import() | pages-cart-marketplace-cart-marketplace-module */ "common").then(__webpack_require__.bind(null, /*! ./pages/cart-marketplace/cart-marketplace.module */ "/ZBB")).then(m => m.CartMarketplacePageModule)
+        loadChildren: () => Promise.all(/*! import() | pages-cart-marketplace-cart-marketplace-module */[__webpack_require__.e("default~cart-marketplace-cart-marketplace-module~pages-cart-marketplace-cart-marketplace-module"), __webpack_require__.e("common")]).then(__webpack_require__.bind(null, /*! ./pages/cart-marketplace/cart-marketplace.module */ "/ZBB")).then(m => m.CartMarketplacePageModule)
+    },
+    {
+        path: 'modal-agregar-ubicacion',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-modal-agregar-ubicacion-modal-agregar-ubicacion-module */ "pages-modal-agregar-ubicacion-modal-agregar-ubicacion-module").then(__webpack_require__.bind(null, /*! ./pages/modal-agregar-ubicacion/modal-agregar-ubicacion.module */ "plgE")).then(m => m.ModalAgregarUbicacionPageModule)
+    },
+    {
+        path: 'modal-ubicaciones-guardadas',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-modal-ubicaciones-guardadas-modal-ubicaciones-guardadas-module */ "pages-modal-ubicaciones-guardadas-modal-ubicaciones-guardadas-module").then(__webpack_require__.bind(null, /*! ./pages/modal-ubicaciones-guardadas/modal-ubicaciones-guardadas.module */ "PcIG")).then(m => m.ModalUbicacionesGuardadasPageModule)
+    },
+    {
+        path: 'modal-metodos-pago-guardados',
+        loadChildren: () => Promise.all(/*! import() | pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module */[__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module")]).then(__webpack_require__.bind(null, /*! ./pages/modal-metodos-pago-guardados/modal-metodos-pago-guardados.module */ "nCwK")).then(m => m.ModalMetodosPagoGuardadosPageModule)
+    },
+    {
+        path: 'modal-registrar-tarjeta',
+        loadChildren: () => Promise.all(/*! import() | pages-modal-registrar-tarjeta-modal-registrar-tarjeta-module */[__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-modal-registrar-tarjeta-modal-registrar-tarjeta-module")]).then(__webpack_require__.bind(null, /*! ./pages/modal-registrar-tarjeta/modal-registrar-tarjeta.module */ "VY6p")).then(m => m.ModalRegistrarTarjetaPageModule)
+    },
+    {
+        path: 'ver-restaurantes',
+        loadChildren: () => Promise.all(/*! import() | pages-ver-restaurantes-ver-restaurantes-module */[__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-ver-restaurantes-ver-restaurantes-module")]).then(__webpack_require__.bind(null, /*! ./pages/ver-restaurantes/ver-restaurantes.module */ "biCY")).then(m => m.VerRestaurantesPageModule)
+    },
+    {
+        path: 'modal-ver-restaurante',
+        loadChildren: () => Promise.all(/*! import() | pages-modal-ver-restaurante-modal-ver-restaurante-module */[__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-modal-ver-restaurante-modal-ver-restaurante-module")]).then(__webpack_require__.bind(null, /*! ./pages/modal-ver-restaurante/modal-ver-restaurante.module */ "5YfY")).then(m => m.ModalVerRestaurantePageModule)
+    },
+    {
+        path: 'modal-ver-pedido',
+        loadChildren: () => Promise.all(/*! import() | pages-modal-ver-pedido-modal-ver-pedido-module */[__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("default~pages-modal-ver-pedido-modal-ver-pedido-module~tab3-tab3-module"), __webpack_require__.e("common"), __webpack_require__.e("pages-modal-ver-pedido-modal-ver-pedido-module")]).then(__webpack_require__.bind(null, /*! ./pages/modal-ver-pedido/modal-ver-pedido.module */ "kG5z")).then(m => m.ModalVerPedidoPageModule)
     }
 ];
 let AppRoutingModule = class AppRoutingModule {

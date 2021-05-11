@@ -42,12 +42,32 @@ const routes: Routes = [
     loadChildren: () => import('./pages/modal-agregar-ubicacion/modal-agregar-ubicacion.module').then( m => m.ModalAgregarUbicacionPageModule)
   },
   {
-    path: 'modal-lista-ubicaciones',
-    loadChildren: () => import('./pages/modal-lista-ubicaciones/modal-lista-ubicaciones.module').then( m => m.ModalListaUbicacionesPageModule)
-  },
-  {
     path: 'modal-ubicaciones-guardadas',
     loadChildren: () => import('./pages/modal-ubicaciones-guardadas/modal-ubicaciones-guardadas.module').then( m => m.ModalUbicacionesGuardadasPageModule)
+  },
+  {
+    path: 'modal-metodos-pago-guardados',
+    loadChildren: () => import('./pages/modal-metodos-pago-guardados/modal-metodos-pago-guardados.module').then( m => m.ModalMetodosPagoGuardadosPageModule)
+  },
+  {
+    path: 'modal-registrar-tarjeta',
+    loadChildren: () => import('./pages/modal-registrar-tarjeta/modal-registrar-tarjeta.module').then( m => m.ModalRegistrarTarjetaPageModule)
+  },
+  {
+    path: 'ver-restaurantes',
+    loadChildren: () => import('./pages/ver-restaurantes/ver-restaurantes.module').then( m => m.VerRestaurantesPageModule)
+  },
+  {
+    path: 'modal-ver-restaurante',
+    loadChildren: () => import('./pages/modal-ver-restaurante/modal-ver-restaurante.module').then( m => m.ModalVerRestaurantePageModule)
+  },
+  {
+    path: 'modal-ver-pedido',
+    loadChildren: () => import('./pages/modal-ver-pedido/modal-ver-pedido.module').then( m => m.ModalVerPedidoPageModule)
+  },
+  {
+    path: 'ver-servicios',
+    loadChildren: () => import('./pages/ver-servicios/ver-servicios.module').then( m => m.VerServiciosPageModule)
   }
 ];
 @NgModule({

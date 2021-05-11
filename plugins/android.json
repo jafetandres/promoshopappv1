@@ -31,7 +31,14 @@
     },
     "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "test.promoshop.pushapp001"
+    },
+    "cordova-plugin-googlemaps": {
+      "PACKAGE_NAME": "test.promoshop.apptest"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-androidx-build": {
+      "PACKAGE_NAME": "test.promoshop.apptest"
+    }
+  }
 }

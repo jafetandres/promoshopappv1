@@ -12,13 +12,16 @@ const URL = environment.url;
 export class HomeService {
   constructor(private http: HttpClient) { }
 
-  getCategorias() {
-    return this.http.get(`${URL}/categoriaEmpresaProducto/`).pipe( tap(console.log));
+  getBanners() {
+    return this.http.get(`${URL}/listabannerhome`).pipe(tap(console.log));
   }
-  getBanners(){
-    return this.http.get(`${URL}/banner/`).pipe( tap(console.log));
+  getCategoriasComida() {
+    return this.http.get(`${URL}/categoriascomidahome`).pipe(tap(console.log));
   }
-  getProductosMarketPlace(){
-    return this.http.get(`${URL}/productosMasVendidos/`).pipe( tap(console.log));
+  getProductosMarketplace() {
+    return this.http.get(`${URL}/productosmarketplacehome`).pipe(tap(console.log));
+  }
+  getLicores() {
+    return this.http.get(`${URL}/licoreshome`).pipe(tap(console.log));
   }
 }

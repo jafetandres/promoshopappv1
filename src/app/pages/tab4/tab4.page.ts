@@ -20,6 +20,10 @@ export class Tab4Page implements OnInit {
     this.usuario = this.usuarioService.getUsuario();
     console.log(this.usuario);
   }
+
+  logout(){
+    this.usuarioService.logout();
+  }
   // abrirPerfil() {
   //   this.router.navigate(['/perfil-usuario', this.usuario]);
   // }

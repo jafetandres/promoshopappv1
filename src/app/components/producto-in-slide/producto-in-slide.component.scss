@@ -1,36 +1,40 @@
 .card-producto {
+    box-shadow: none !important;
     // background-color: red;
     border-radius: 0px;
-   
+
     height: 200px;
     width: 300px;
-    margin-right: 0px ;
+    margin-right: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
     ion-slides {
-        ion-slide{
+        ion-slide {
             // background-color: green;
             height: 150px !important;
             width: 300px !important;
-            img{
+            img {
                 // background-color: royalblue;
                 height: 150px !important;
                 width: 300px !important;
             }
         }
     }
-    
-    ion-card-header{
+
+    ion-card-header {
         margin: 0;
         padding: 5px;
         text-align: left;
-        ion-card-title{
+        ion-card-title {
             font-size: 15px;
+            ion-icon {
+                font-size: 12px;
+                color: #faae31;
+            }
         }
-        ion-card-subtitle{
-            text-transform:initial;
+        ion-card-subtitle {
+            text-transform: initial;
             font-weight: 500;
-
         }
     }
 }

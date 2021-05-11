@@ -89,7 +89,6 @@ export class ModalSignupPage implements OnInit {
 
   async registro(fRegistro: NgForm) {
     if(fRegistro.invalid){return;}
-    
     const valido = await this.usuarioService.registro(this.registerUser);
 
     if (valido) {

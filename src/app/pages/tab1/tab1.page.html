@@ -16,7 +16,7 @@
   <ion-card class="card-principal">
     <ion-card-header>
       <ng-container *ngFor="let banner of banners | async">
-        <ion-slides pager="ios" [options]="publicidadSlide" *ngIf="banner.pantalla == 'home'">
+        <ion-slides pager="ios" [options]="bannerHome" *ngIf="banner.pantalla == 'home'">
           <ion-slide *ngFor="let portada of banner.portadas">
             <img src="{{portada.imagen}}">
           </ion-slide>
@@ -26,7 +26,7 @@
     <ion-card-content>
       <ion-slides pager="false" [options]="buttonsSlide">
         <ion-slide>
-          <ion-button (click)="onClick()" fill="clear">
+          <ion-button (click)="mostrarRestaurantes()" fill="clear">
             <div>
               <ion-icon src="/assets/icon/comida-icon.svg"></ion-icon>
               <small> Comida</small>
@@ -58,7 +58,7 @@
           </ion-button>
         </ion-slide>
         <ion-slide>
-          <ion-button (click)="onClick()" fill="clear" color="dark">
+          <ion-button (click)="mostrarServicios()" fill="clear" color="dark">
             <div>
               <ion-icon src="/assets/icon/servicios-icon.svg"></ion-icon>
               <small> Servicios</small>
@@ -78,8 +78,16 @@
   <ion-card class="card-container">
     <h4>Marketplace</h4>
     <ion-slides mode="ios" pager="false" [options]="marketplaceSlide">
-      <ion-slide *ngFor="let producto of productosMarketPlace | async">
+      <ion-slide *ngFor="let producto of productosMarketplace | async">
         <app-producto-in-slide [producto]="producto"></app-producto-in-slide>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+  <ion-card class="card-container">
+    <h4>Licores</h4>
+    <ion-slides mode="ios" pager="false" [options]="marketplaceSlide">
+      <ion-slide *ngFor="let licor of licores | async">
+        <app-producto-in-slide [producto]="licor"></app-producto-in-slide>
       </ion-slide>
     </ion-slides>
   </ion-card>

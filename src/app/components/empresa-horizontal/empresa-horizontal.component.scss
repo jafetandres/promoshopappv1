@@ -1,0 +1,35 @@
+ion-card {
+    // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    // box-shadow: none;
+    // border-radius: 0;
+    // border-style: solid;
+
+    // background-color: yellow;
+
+    img {
+        height: 150px !important;
+        width: 100% !important;
+    }
+    ion-card-header {
+        // margin: 0;
+        padding: 10px;
+        text-align: left;
+        ion-card-title {
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: capitalize;
+
+            // .icon-like {
+            //     font-size: 20px;
+            // }
+            ion-icon {
+                font-size: 15px!important;
+           
+            }
+        }
+        ion-card-subtitle {
+            text-transform: initial;
+            font-weight: 500;
+        }
+    }
+}

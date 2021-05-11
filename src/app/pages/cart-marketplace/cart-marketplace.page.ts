@@ -4,6 +4,7 @@ import { CartMarketplaceService } from '../../services/cart-marketplace.service'
 import { UsuarioService } from '../../services/usuario.service';
 import { ModalUbicacionesGuardadasPage } from '../modal-ubicaciones-guardadas/modal-ubicaciones-guardadas.page';
 import { ModalController } from '@ionic/angular';
+import { ModalMetodosPagoGuardadosPage } from '../modal-metodos-pago-guardados/modal-metodos-pago-guardados.page';
 
 @Component({
   selector: 'app-cart-marketplace',
@@ -13,26 +14,37 @@ import { ModalController } from '@ionic/angular';
 export class CartMarketplacePage implements OnInit {
   cart: Producto[] = [];
   ubicaciones: any = [];
-  ubicacionEntregaDefault:any;
+  tarjetas: any = [];
 
 
   constructor(private cartMarketplaceService: CartMarketplaceService,
     private usuarioService: UsuarioService,
     private modalCtrl: ModalController) {
-    this.usuarioService.getUbicaciones().then(resp => {
-      resp.subscribe(res => {
-        this.ubicaciones = res;
-        console.log(JSON.stringify(this.ubicaciones));
-      })
-    });
+    this.getUbicacionesUsuario();
+    this.getTarjetasUsuario();
   }
 
   ngOnInit() {
     this.cart = this.cartMarketplaceService.getCart();
-    
   }
+
+  getUbicacionesUsuario() {
+    this.usuarioService.getUbicacionesUsuario().then(resolve => {
+      resolve.subscribe(resp => {
+        this.ubicaciones = resp;
+      })
+    });
+  }
+
+  getTarjetasUsuario() {
+    this.usuarioService.getTarjetasUsuario().then(resolve => {
+      resolve.subscribe(resp => {
+        this.tarjetas = resp;
+      })
+    });
+  }
+
   async abrirUbicacionesGuardadas() {
-    console.log("ubicaciones3" + JSON.stringify(this.ubicaciones));
     const modal = await this.modalCtrl.create({
       component: ModalUbicacionesGuardadasPage,
       componentProps: {
@@ -42,6 +54,17 @@ export class CartMarketplacePage implements OnInit {
     await modal.present();
     const resp = await modal.onDidDismiss();
     console.log(resp);
+  }
+
+  async abrirMetodosPagoGuardados() {
+    const modal = await this.modalCtrl.create({
+      component: ModalMetodosPagoGuardadosPage,
+      componentProps: {
+        tarjetas: this.tarjetas,
+      }
+    });
+    await modal.present();
+    const resp = await modal.onDidDismiss();
   }
 
   decreaseCartItem(product) {

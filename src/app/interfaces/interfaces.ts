@@ -14,6 +14,7 @@ export interface SubCategoria {
 
 
 export interface Usuario {
+  id?:number;
   nombres?: string;
   apellidos?: string;
   username?: string;
@@ -24,6 +25,7 @@ export interface Usuario {
   password2?: string;
   celular?: string;
   foto?: string;
+  player_id?:string;
 
 }
 export interface Producto {
@@ -35,4 +37,10 @@ export interface Producto {
   stock?: number;
   cantidad?: number;
   cantidad_max?: number;
+}
+
+export interface Tarjeta{
+  etiqueta?: string;
+  marca?: string;
+  usuario?: string;
 }

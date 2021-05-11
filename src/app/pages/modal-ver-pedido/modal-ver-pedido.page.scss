@@ -1,0 +1,13 @@
+#map_canvas {
+    // width: 50%;
+    height: 50%;
+}
+
+ion-app._gmaps_cdv_ .nav-decor {
+    background-color: transparent !important;
+}
+
+ion-app._gmaps_cdv_ .ion-page:not(._gmaps_cdv_),
+ion-app._gmaps_cdv_ ion-modal:not(._gmaps_cdv_) {
+    display: none;
+}

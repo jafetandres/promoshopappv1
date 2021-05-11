@@ -94,7 +94,7 @@
           loadChildren: function loadChildren() {
             return Promise.all(
             /*! import() | tab1-tab1-module */
-            [__webpack_require__.e("default~pages-perfil-usuario-perfil-usuario-module~tab1-tab1-module"), __webpack_require__.e("common"), __webpack_require__.e("tab1-tab1-module")]).then(__webpack_require__.bind(null,
+            [__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("tab1-tab1-module")]).then(__webpack_require__.bind(null,
             /*! ../tab1/tab1.module */
             "uMfO")).then(function (m) {
               return m.Tab1PageModule;
@@ -116,7 +116,7 @@
           loadChildren: function loadChildren() {
             return Promise.all(
             /*! import() | tab3-tab3-module */
-            [__webpack_require__.e("common"), __webpack_require__.e("tab3-tab3-module")]).then(__webpack_require__.bind(null,
+            [__webpack_require__.e("default~pages-modal-ver-pedido-modal-ver-pedido-module~tab3-tab3-module"), __webpack_require__.e("common"), __webpack_require__.e("tab3-tab3-module")]).then(__webpack_require__.bind(null,
             /*! ../tab3/tab3.module */
             "XgaQ")).then(function (m) {
               return m.Tab3PageModule;
@@ -138,7 +138,7 @@
           loadChildren: function loadChildren() {
             return __webpack_require__.e(
             /*! import() | cart-marketplace-cart-marketplace-module */
-            "common").then(__webpack_require__.bind(null,
+            "default~cart-marketplace-cart-marketplace-module~pages-cart-marketplace-cart-marketplace-module").then(__webpack_require__.bind(null,
             /*! ../cart-marketplace/cart-marketplace.module */
             "/ZBB")).then(function (m) {
               return m.CartMarketplacePageModule;

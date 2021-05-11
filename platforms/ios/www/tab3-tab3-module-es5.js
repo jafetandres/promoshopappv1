@@ -1,4 +1,8 @@
 (function () {
+  function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+  function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
   (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["tab3-tab3-module"], {
@@ -78,7 +82,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <!-- <ion-title>\n      Tab 3\n    </ion-title> -->\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Tab 3</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <app-explore-container name=\"Tab 3 page\"></app-explore-container>\n</ion-content>\n";
+      __webpack_exports__["default"] = "<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Tab 3\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  \n<ion-button (click)=\"abrirMapa()\" expand=\"block\" fill=\"clear\" shape=\"round\">\n  Mapa\n</ion-button>\n\n\n</ion-content>\n";
       /***/
     },
 
@@ -213,13 +217,230 @@
       var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! @angular/core */
       "fXoL");
+      /* harmony import */
 
-      var Tab3Page = function Tab3Page() {
-        _classCallCheck(this, Tab3Page);
-      };
+
+      var _modal_ver_pedido_modal_ver_pedido_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! ../modal-ver-pedido/modal-ver-pedido.page */
+      "EKej");
+      /* harmony import */
+
+
+      var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! @ionic/angular */
+      "TEn/");
+      /* harmony import */
+
+
+      var _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      /*! @ionic-native/google-maps */
+      "tBOM");
+
+      var Tab3Page = /*#__PURE__*/function () {
+        function Tab3Page(loadingCtrl, toastCtrl, platform, modalCtrl) {
+          _classCallCheck(this, Tab3Page);
+
+          this.loadingCtrl = loadingCtrl;
+          this.toastCtrl = toastCtrl;
+          this.platform = platform;
+          this.modalCtrl = modalCtrl;
+          platform.ready().then(function () {
+            if (document.URL.startsWith('http')) {
+              _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_6__["Environment"].setEnv({
+                API_KEY_FOR_BROWSER_RELEASE: "AIzaSyA9esa9PaJXtLN_vJLo1Uvgv3saFYh1n6k",
+                API_KEY_FOR_BROWSER_DEBUG: "AIzaSyA9esa9PaJXtLN_vJLo1Uvgv3saFYh1n6k"
+              });
+            }
+          });
+        }
+
+        _createClass(Tab3Page, [{
+          key: "abrirMapa",
+          value: function abrirMapa() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+              var modal;
+              return regeneratorRuntime.wrap(function _callee$(_context) {
+                while (1) {
+                  switch (_context.prev = _context.next) {
+                    case 0:
+                      _context.next = 2;
+                      return this.modalCtrl.create({
+                        component: _modal_ver_pedido_modal_ver_pedido_page__WEBPACK_IMPORTED_MODULE_4__["ModalVerPedidoPage"]
+                      });
+
+                    case 2:
+                      modal = _context.sent;
+                      _context.next = 5;
+                      return modal.present();
+
+                    case 5:
+                    case "end":
+                      return _context.stop();
+                  }
+                }
+              }, _callee, this);
+            }));
+          }
+        }, {
+          key: "ngOnInit",
+          value: function ngOnInit() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+              return regeneratorRuntime.wrap(function _callee2$(_context2) {
+                while (1) {
+                  switch (_context2.prev = _context2.next) {
+                    case 0:
+                      _context2.next = 2;
+                      return this.platform.ready();
+
+                    case 2:
+                      _context2.next = 4;
+                      return this.loadMap();
+
+                    case 4:
+                    case "end":
+                      return _context2.stop();
+                  }
+                }
+              }, _callee2, this);
+            }));
+          }
+        }, {
+          key: "loadMap",
+          value: function loadMap() {
+            // Esta función inicializa la propiedad de clase
+            // map
+            // que va a contener el control de nuestro mapa de google
+            // Para crear nuestro mapa debemos enviar como parametros
+            // el id del div en donde se va a renderizar el mapa (paso anterior)
+            // y las opciones que configuran nuestro mapa
+            // This code is necessary for browser
+            this.map = _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMaps"].create("map_canvas", {
+              camera: {
+                target: {
+                  lat: -2.1537488,
+                  lng: -79.8883037
+                },
+                zoom: 18,
+                tilt: 30
+              }
+            });
+          }
+        }, {
+          key: "localizar",
+          value: function localizar() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
+              var _this = this;
+
+              return regeneratorRuntime.wrap(function _callee3$(_context3) {
+                while (1) {
+                  switch (_context3.prev = _context3.next) {
+                    case 0:
+                      // Limpiamos todos los elementos de nuestro mapa
+                      this.map.clear(); // Creamos un componente de Ionic para mostrar un mensaje
+                      // mientras obtenemos esperamos que termine el proceso de
+                      // obtener la ubicación
+
+                      _context3.next = 3;
+                      return this.loadingCtrl.create({
+                        message: "Espera por favor..."
+                      });
+
+                    case 3:
+                      this.loading = _context3.sent;
+                      _context3.next = 6;
+                      return this.loading.present();
+
+                    case 6:
+                      // Ejecutamos el método getMyLocation de nuestra propiedad de clase
+                      // map
+                      // para obtener nuestra ubicación actual
+                      this.map.getMyLocation().then(function (location) {
+                        // Una vez obtenida la ubicación cerramos el mensaje de diálogo
+                        _this.loading.dismiss(); // Movemos la camara a nuestra ubicación con una pequeña animación
+
+
+                        _this.map.animateCamera({
+                          target: location.latLng,
+                          zoom: 17,
+                          tilt: 30
+                        }); // Agregamos un nuevo marcador
+
+
+                        var marker = _this.map.addMarkerSync({
+                          title: "Estoy aquí!",
+                          snippet: "This plugin is awesome!",
+                          position: location.latLng,
+                          animation: _ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsAnimation"].BOUNCE
+                        }); // Mostramos un InfoWindow
+
+
+                        marker.showInfoWindow(); // Podemos configurar un evento que se ejecute cuando
+                        // se haya dado clic
+
+                        marker.on(_ionic_native_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsEvent"].MARKER_CLICK).subscribe(function () {
+                          _this.showToast("clicked!");
+                        });
+                      })["catch"](function (error) {
+                        // En caso de que haya un problema en obtener la
+                        // ubicación
+                        _this.loading.dismiss();
+
+                        _this.showToast(error.error_message);
+                      });
+
+                    case 7:
+                    case "end":
+                      return _context3.stop();
+                  }
+                }
+              }, _callee3, this);
+            }));
+          } // Función que muestra un Toast en la parte inferior
+          // de la pantalla
+
+        }, {
+          key: "showToast",
+          value: function showToast(mensaje) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
+              var toast;
+              return regeneratorRuntime.wrap(function _callee4$(_context4) {
+                while (1) {
+                  switch (_context4.prev = _context4.next) {
+                    case 0:
+                      _context4.next = 2;
+                      return this.toastCtrl.create({
+                        message: mensaje,
+                        duration: 2000,
+                        position: "bottom"
+                      });
+
+                    case 2:
+                      toast = _context4.sent;
+                      toast.present();
+
+                    case 4:
+                    case "end":
+                      return _context4.stop();
+                  }
+                }
+              }, _callee4, this);
+            }));
+          }
+        }]);
+
+        return Tab3Page;
+      }();
 
       Tab3Page.ctorParameters = function () {
-        return [];
+        return [{
+          type: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["LoadingController"]
+        }, {
+          type: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["ToastController"]
+        }, {
+          type: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["Platform"]
+        }, {
+          type: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["ModalController"]
+        }];
       };
 
       Tab3Page = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
@@ -246,7 +467,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ0YWIzLnBhZ2Uuc2NzcyJ9 */";
+      __webpack_exports__["default"] = "#map_canvas {\n  width: 100%;\n  height: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3RhYjMucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksV0FBQTtFQUNBLFlBQUE7QUFDSiIsImZpbGUiOiJ0YWIzLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiNtYXBfY2FudmFzIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gIH0iXX0= */";
       /***/
     }
   }]);

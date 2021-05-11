@@ -14,6 +14,11 @@ public final class R {
   }
   public static final class attr {
     /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int ambientEnabled=0x7f020000;
+    /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -29,13 +34,41 @@ public final class R {
      * <tr><td>wide</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int buttonSize=0x7f020000;
+    public static final int buttonSize=0x7f020001;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraBearing=0x7f020002;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraMaxZoomPreference=0x7f020003;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraMinZoomPreference=0x7f020004;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTargetLat=0x7f020005;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTargetLng=0x7f020006;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTilt=0x7f020007;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraZoom=0x7f020008;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int cardBackgroundColor=0x7f020001;
+    public static final int cardBackgroundColor=0x7f020009;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -43,7 +76,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cardCornerRadius=0x7f020002;
+    public static final int cardCornerRadius=0x7f02000a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -51,7 +84,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cardElevation=0x7f020003;
+    public static final int cardElevation=0x7f02000b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -59,29 +92,29 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cardMaxElevation=0x7f020004;
+    public static final int cardMaxElevation=0x7f02000c;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int cardPreventCornerOverlap=0x7f020005;
+    public static final int cardPreventCornerOverlap=0x7f02000d;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int cardUseCompatPadding=0x7f020006;
+    public static final int cardUseCompatPadding=0x7f02000e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int cardViewStyle=0x7f020007;
+    public static final int cardViewStyle=0x7f02000f;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int circleCrop=0x7f020008;
+    public static final int circleCrop=0x7f020010;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -98,7 +131,7 @@ public final class R {
      * <tr><td>light</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int colorScheme=0x7f020009;
+    public static final int colorScheme=0x7f020011;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -106,7 +139,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPadding=0x7f02000a;
+    public static final int contentPadding=0x7f020012;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -114,7 +147,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingBottom=0x7f02000b;
+    public static final int contentPaddingBottom=0x7f020013;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -122,7 +155,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingLeft=0x7f02000c;
+    public static final int contentPaddingLeft=0x7f020014;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -130,7 +163,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingRight=0x7f02000d;
+    public static final int contentPaddingRight=0x7f020015;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -138,33 +171,33 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingTop=0x7f02000e;
+    public static final int contentPaddingTop=0x7f020016;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int coordinatorLayoutStyle=0x7f02000f;
+    public static final int coordinatorLayoutStyle=0x7f020017;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f020010;
+    public static final int font=0x7f020018;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f020011;
+    public static final int fontProviderAuthority=0x7f020019;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f020012;
+    public static final int fontProviderCerts=0x7f02001a;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -176,7 +209,7 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f020013;
+    public static final int fontProviderFetchStrategy=0x7f02001b;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -188,17 +221,17 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f020014;
+    public static final int fontProviderFetchTimeout=0x7f02001c;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f020015;
+    public static final int fontProviderPackage=0x7f02001d;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f020016;
+    public static final int fontProviderQuery=0x7f02001e;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -210,15 +243,15 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f020017;
+    public static final int fontStyle=0x7f02001f;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f020018;
+    public static final int fontWeight=0x7f020020;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int imageAspectRatio=0x7f020019;
+    public static final int imageAspectRatio=0x7f020021;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -231,21 +264,37 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int imageAspectRatioAdjust=0x7f02001a;
+    public static final int imageAspectRatioAdjust=0x7f020022;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int keylines=0x7f02001b;
+    public static final int keylines=0x7f020023;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsNorthEastLatitude=0x7f020024;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsNorthEastLongitude=0x7f020025;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsSouthWestLatitude=0x7f020026;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsSouthWestLongitude=0x7f020027;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_anchor=0x7f02001c;
+    public static final int layout_anchor=0x7f020028;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -269,12 +318,12 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int layout_anchorGravity=0x7f02001d;
+    public static final int layout_anchorGravity=0x7f020029;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_behavior=0x7f02001e;
+    public static final int layout_behavior=0x7f02002a;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -292,7 +341,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int layout_dodgeInsetEdges=0x7f02001f;
+    public static final int layout_dodgeInsetEdges=0x7f02002b;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -309,11 +358,31 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int layout_insetEdge=0x7f020020;
+    public static final int layout_insetEdge=0x7f02002c;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_keyline=0x7f020021;
+    public static final int layout_keyline=0x7f02002d;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int liteMode=0x7f02002e;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>hybrid</td><td>4</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>normal</td><td>1</td><td></td></tr>
+     * <tr><td>satellite</td><td>2</td><td></td></tr>
+     * <tr><td>terrain</td><td>3</td><td></td></tr>
+     * </table>
+     */
+    public static final int mapType=0x7f02002f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -322,7 +391,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int scopeUris=0x7f020022;
+    public static final int scopeUris=0x7f020030;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -332,7 +401,57 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int statusBarBackground=0x7f020023;
+    public static final int statusBarBackground=0x7f020031;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiCompass=0x7f020032;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiMapToolbar=0x7f020033;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiRotateGestures=0x7f020034;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiScrollGestures=0x7f020035;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiScrollGesturesDuringRotateOrZoom=0x7f020036;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiTiltGestures=0x7f020037;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiZoomControls=0x7f020038;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiZoomGestures=0x7f020039;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int useViewLifecycle=0x7f02003a;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int zOrderOnTop=0x7f02003b;
   }
   public static final class bool {
     public static final int abc_action_bar_embed_tabs=0x7f030000;
@@ -412,22 +531,24 @@ public final class R {
     public static final int common_google_signin_btn_text_light_focused=0x7f060010;
     public static final int common_google_signin_btn_text_light_normal=0x7f060011;
     public static final int common_google_signin_btn_text_light_normal_background=0x7f060012;
-    public static final int googleg_disabled_color_18=0x7f060013;
-    public static final int googleg_standard_color_18=0x7f060014;
-    public static final int ic_os_notification_fallback_white_24dp=0x7f060015;
-    public static final int notification_action_background=0x7f060016;
-    public static final int notification_bg=0x7f060017;
-    public static final int notification_bg_low=0x7f060018;
-    public static final int notification_bg_low_normal=0x7f060019;
-    public static final int notification_bg_low_pressed=0x7f06001a;
-    public static final int notification_bg_normal=0x7f06001b;
-    public static final int notification_bg_normal_pressed=0x7f06001c;
-    public static final int notification_icon_background=0x7f06001d;
-    public static final int notification_template_icon_bg=0x7f06001e;
-    public static final int notification_template_icon_low_bg=0x7f06001f;
-    public static final int notification_tile_bg=0x7f060020;
-    public static final int notify_panel_notification_icon_bg=0x7f060021;
-    public static final int screen=0x7f060022;
+    public static final int dummy_my_location_button=0x7f060013;
+    public static final int dummy_mylocation_button_shadow=0x7f060014;
+    public static final int googleg_disabled_color_18=0x7f060015;
+    public static final int googleg_standard_color_18=0x7f060016;
+    public static final int ic_os_notification_fallback_white_24dp=0x7f060017;
+    public static final int notification_action_background=0x7f060018;
+    public static final int notification_bg=0x7f060019;
+    public static final int notification_bg_low=0x7f06001a;
+    public static final int notification_bg_low_normal=0x7f06001b;
+    public static final int notification_bg_low_pressed=0x7f06001c;
+    public static final int notification_bg_normal=0x7f06001d;
+    public static final int notification_bg_normal_pressed=0x7f06001e;
+    public static final int notification_icon_background=0x7f06001f;
+    public static final int notification_template_icon_bg=0x7f060020;
+    public static final int notification_template_icon_low_bg=0x7f060021;
+    public static final int notification_tile_bg=0x7f060022;
+    public static final int notify_panel_notification_icon_bg=0x7f060023;
+    public static final int screen=0x7f060024;
   }
   public static final class id {
     public static final int action0=0x7f070000;
@@ -462,39 +583,42 @@ public final class R {
     public static final int fill_horizontal=0x7f07001d;
     public static final int fill_vertical=0x7f07001e;
     public static final int forever=0x7f07001f;
-    public static final int icon=0x7f070020;
-    public static final int icon_group=0x7f070021;
-    public static final int icon_only=0x7f070022;
-    public static final int info=0x7f070023;
-    public static final int italic=0x7f070024;
-    public static final int left=0x7f070025;
-    public static final int light=0x7f070026;
-    public static final int line1=0x7f070027;
-    public static final int line3=0x7f070028;
-    public static final int media_actions=0x7f070029;
-    public static final int none=0x7f07002a;
-    public static final int normal=0x7f07002b;
-    public static final int notification_background=0x7f07002c;
-    public static final int notification_main_column=0x7f07002d;
-    public static final int notification_main_column_container=0x7f07002e;
-    public static final int os_bgimage_notif_bgimage=0x7f07002f;
-    public static final int os_bgimage_notif_bgimage_align_layout=0x7f070030;
-    public static final int os_bgimage_notif_bgimage_right_aligned=0x7f070031;
-    public static final int os_bgimage_notif_body=0x7f070032;
-    public static final int os_bgimage_notif_title=0x7f070033;
-    public static final int right=0x7f070034;
-    public static final int right_icon=0x7f070035;
-    public static final int right_side=0x7f070036;
-    public static final int standard=0x7f070037;
-    public static final int start=0x7f070038;
-    public static final int status_bar_latest_event_content=0x7f070039;
-    public static final int tag_transition_group=0x7f07003a;
-    public static final int text=0x7f07003b;
-    public static final int text2=0x7f07003c;
-    public static final int time=0x7f07003d;
-    public static final int title=0x7f07003e;
-    public static final int top=0x7f07003f;
-    public static final int wide=0x7f070040;
+    public static final int hybrid=0x7f070020;
+    public static final int icon=0x7f070021;
+    public static final int icon_group=0x7f070022;
+    public static final int icon_only=0x7f070023;
+    public static final int info=0x7f070024;
+    public static final int italic=0x7f070025;
+    public static final int left=0x7f070026;
+    public static final int light=0x7f070027;
+    public static final int line1=0x7f070028;
+    public static final int line3=0x7f070029;
+    public static final int media_actions=0x7f07002a;
+    public static final int none=0x7f07002b;
+    public static final int normal=0x7f07002c;
+    public static final int notification_background=0x7f07002d;
+    public static final int notification_main_column=0x7f07002e;
+    public static final int notification_main_column_container=0x7f07002f;
+    public static final int os_bgimage_notif_bgimage=0x7f070030;
+    public static final int os_bgimage_notif_bgimage_align_layout=0x7f070031;
+    public static final int os_bgimage_notif_bgimage_right_aligned=0x7f070032;
+    public static final int os_bgimage_notif_body=0x7f070033;
+    public static final int os_bgimage_notif_title=0x7f070034;
+    public static final int right=0x7f070035;
+    public static final int right_icon=0x7f070036;
+    public static final int right_side=0x7f070037;
+    public static final int satellite=0x7f070038;
+    public static final int standard=0x7f070039;
+    public static final int start=0x7f07003a;
+    public static final int status_bar_latest_event_content=0x7f07003b;
+    public static final int tag_transition_group=0x7f07003c;
+    public static final int terrain=0x7f07003d;
+    public static final int text=0x7f07003e;
+    public static final int text2=0x7f07003f;
+    public static final int time=0x7f070040;
+    public static final int title=0x7f070041;
+    public static final int top=0x7f070042;
+    public static final int wide=0x7f070043;
   }
   public static final class integer {
     public static final int cancel_button_image_alpha=0x7f080000;
@@ -504,22 +628,23 @@ public final class R {
   public static final class layout {
     public static final int browser_actions_context_menu_page=0x7f090000;
     public static final int browser_actions_context_menu_row=0x7f090001;
-    public static final int notification_action=0x7f090002;
-    public static final int notification_action_tombstone=0x7f090003;
-    public static final int notification_media_action=0x7f090004;
-    public static final int notification_media_cancel_action=0x7f090005;
-    public static final int notification_template_big_media=0x7f090006;
-    public static final int notification_template_big_media_custom=0x7f090007;
-    public static final int notification_template_big_media_narrow=0x7f090008;
-    public static final int notification_template_big_media_narrow_custom=0x7f090009;
-    public static final int notification_template_custom_big=0x7f09000a;
-    public static final int notification_template_icon_group=0x7f09000b;
-    public static final int notification_template_lines_media=0x7f09000c;
-    public static final int notification_template_media=0x7f09000d;
-    public static final int notification_template_media_custom=0x7f09000e;
-    public static final int notification_template_part_chronometer=0x7f09000f;
-    public static final int notification_template_part_time=0x7f090010;
-    public static final int onesignal_bgimage_notif_layout=0x7f090011;
+    public static final int dummy_infowindow=0x7f090002;
+    public static final int notification_action=0x7f090003;
+    public static final int notification_action_tombstone=0x7f090004;
+    public static final int notification_media_action=0x7f090005;
+    public static final int notification_media_cancel_action=0x7f090006;
+    public static final int notification_template_big_media=0x7f090007;
+    public static final int notification_template_big_media_custom=0x7f090008;
+    public static final int notification_template_big_media_narrow=0x7f090009;
+    public static final int notification_template_big_media_narrow_custom=0x7f09000a;
+    public static final int notification_template_custom_big=0x7f09000b;
+    public static final int notification_template_icon_group=0x7f09000c;
+    public static final int notification_template_lines_media=0x7f09000d;
+    public static final int notification_template_media=0x7f09000e;
+    public static final int notification_template_media_custom=0x7f09000f;
+    public static final int notification_template_part_chronometer=0x7f090010;
+    public static final int notification_template_part_time=0x7f090011;
+    public static final int onesignal_bgimage_notif_layout=0x7f090012;
   }
   public static final class mipmap {
     public static final int icon=0x7f0a0000;
@@ -554,7 +679,24 @@ public final class R {
     public static final int location_not_available_open_settings_message=0x7f0c0017;
     public static final int location_not_available_open_settings_option=0x7f0c0018;
     public static final int location_not_available_title=0x7f0c0019;
-    public static final int status_bar_notification_info_overflow=0x7f0c001a;
+    public static final int pgm_api_key_error=0x7f0c001a;
+    public static final int pgm_can_not_get_location=0x7f0c001b;
+    public static final int pgm_google_close_button=0x7f0c001c;
+    public static final int pgm_google_play_developer_error=0x7f0c001d;
+    public static final int pgm_google_play_error=0x7f0c001e;
+    public static final int pgm_google_play_internal_error=0x7f0c001f;
+    public static final int pgm_google_play_invalid_account=0x7f0c0020;
+    public static final int pgm_google_play_license_check_failed=0x7f0c0021;
+    public static final int pgm_google_play_network_error=0x7f0c0022;
+    public static final int pgm_google_play_service_disabled=0x7f0c0023;
+    public static final int pgm_google_play_service_invalid=0x7f0c0024;
+    public static final int pgm_google_play_service_missing=0x7f0c0025;
+    public static final int pgm_google_play_service_update_required=0x7f0c0026;
+    public static final int pgm_google_play_sign_in_required=0x7f0c0027;
+    public static final int pgm_location_rejected_by_user=0x7f0c0028;
+    public static final int pgm_no_location_providers=0x7f0c0029;
+    public static final int pgm_no_location_service_is_disabled=0x7f0c002a;
+    public static final int status_bar_notification_info_overflow=0x7f0c002b;
   }
   public static final class style {
     public static final int Base_CardView=0x7f0d0000;
@@ -612,10 +754,10 @@ public final class R {
      * @see #CardView_contentPaddingTop
      */
     public static final int[] CardView={
-      0x0101013f, 0x01010140, 0x7f020001, 0x7f020002, 
-      0x7f020003, 0x7f020004, 0x7f020005, 0x7f020006, 
-      0x7f02000a, 0x7f02000b, 0x7f02000c, 0x7f02000d, 
-      0x7f02000e
+      0x0101013f, 0x01010140, 0x7f020009, 0x7f02000a, 
+      0x7f02000b, 0x7f02000c, 0x7f02000d, 0x7f02000e, 
+      0x7f020012, 0x7f020013, 0x7f020014, 0x7f020015, 
+      0x7f020016
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
@@ -792,7 +934,7 @@ public final class R {
      * @see #CoordinatorLayout_statusBarBackground
      */
     public static final int[] CoordinatorLayout={
-      0x7f02001b, 0x7f020023
+      0x7f020023, 0x7f020031
     };
     /**
      * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#keylines}
@@ -845,8 +987,8 @@ public final class R {
      * @see #CoordinatorLayout_Layout_layout_keyline
      */
     public static final int[] CoordinatorLayout_Layout={
-      0x010100b3, 0x7f02001c, 0x7f02001d, 0x7f02001e, 
-      0x7f02001f, 0x7f020020, 0x7f020021
+      0x010100b3, 0x7f020028, 0x7f020029, 0x7f02002a, 
+      0x7f02002b, 0x7f02002c, 0x7f02002d
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
@@ -1004,8 +1146,8 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-      0x7f020011, 0x7f020012, 0x7f020013, 0x7f020014, 
-      0x7f020015, 0x7f020016
+      0x7f020019, 0x7f02001a, 0x7f02001b, 0x7f02001c, 
+      0x7f02001d, 0x7f02001e
     };
     /**
      * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#fontProviderAuthority}
@@ -1105,8 +1247,8 @@ public final class R {
      * @see #FontFamilyFont_fontWeight
      */
     public static final int[] FontFamilyFont={
-      0x01010532, 0x01010533, 0x0101053f, 0x7f020010, 
-      0x7f020017, 0x7f020018
+      0x01010532, 0x01010533, 0x0101053f, 0x7f020018, 
+      0x7f02001f, 0x7f020020
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -1200,7 +1342,7 @@ public final class R {
      * @see #LoadingImageView_imageAspectRatioAdjust
      */
     public static final int[] LoadingImageView={
-      0x7f020008, 0x7f020019, 0x7f02001a
+      0x7f020010, 0x7f020021, 0x7f020022
     };
     /**
      * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#circleCrop}
@@ -1240,6 +1382,310 @@ public final class R {
      */
     public static final int LoadingImageView_imageAspectRatioAdjust=2;
     /**
+     * Attributes that can be used with a MapAttrs.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #MapAttrs_ambientEnabled test.promoshop.apptest:ambientEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraBearing test.promoshop.apptest:cameraBearing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraMaxZoomPreference test.promoshop.apptest:cameraMaxZoomPreference}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraMinZoomPreference test.promoshop.apptest:cameraMinZoomPreference}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLat test.promoshop.apptest:cameraTargetLat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLng test.promoshop.apptest:cameraTargetLng}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTilt test.promoshop.apptest:cameraTilt}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraZoom test.promoshop.apptest:cameraZoom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLatitude test.promoshop.apptest:latLngBoundsNorthEastLatitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLongitude test.promoshop.apptest:latLngBoundsNorthEastLongitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLatitude test.promoshop.apptest:latLngBoundsSouthWestLatitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLongitude test.promoshop.apptest:latLngBoundsSouthWestLongitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_liteMode test.promoshop.apptest:liteMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_mapType test.promoshop.apptest:mapType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiCompass test.promoshop.apptest:uiCompass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiMapToolbar test.promoshop.apptest:uiMapToolbar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiRotateGestures test.promoshop.apptest:uiRotateGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiScrollGestures test.promoshop.apptest:uiScrollGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiScrollGesturesDuringRotateOrZoom test.promoshop.apptest:uiScrollGesturesDuringRotateOrZoom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiTiltGestures test.promoshop.apptest:uiTiltGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomControls test.promoshop.apptest:uiZoomControls}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomGestures test.promoshop.apptest:uiZoomGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_useViewLifecycle test.promoshop.apptest:useViewLifecycle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_zOrderOnTop test.promoshop.apptest:zOrderOnTop}</code></td><td></td></tr>
+     * </table>
+     * @see #MapAttrs_ambientEnabled
+     * @see #MapAttrs_cameraBearing
+     * @see #MapAttrs_cameraMaxZoomPreference
+     * @see #MapAttrs_cameraMinZoomPreference
+     * @see #MapAttrs_cameraTargetLat
+     * @see #MapAttrs_cameraTargetLng
+     * @see #MapAttrs_cameraTilt
+     * @see #MapAttrs_cameraZoom
+     * @see #MapAttrs_latLngBoundsNorthEastLatitude
+     * @see #MapAttrs_latLngBoundsNorthEastLongitude
+     * @see #MapAttrs_latLngBoundsSouthWestLatitude
+     * @see #MapAttrs_latLngBoundsSouthWestLongitude
+     * @see #MapAttrs_liteMode
+     * @see #MapAttrs_mapType
+     * @see #MapAttrs_uiCompass
+     * @see #MapAttrs_uiMapToolbar
+     * @see #MapAttrs_uiRotateGestures
+     * @see #MapAttrs_uiScrollGestures
+     * @see #MapAttrs_uiScrollGesturesDuringRotateOrZoom
+     * @see #MapAttrs_uiTiltGestures
+     * @see #MapAttrs_uiZoomControls
+     * @see #MapAttrs_uiZoomGestures
+     * @see #MapAttrs_useViewLifecycle
+     * @see #MapAttrs_zOrderOnTop
+     */
+    public static final int[] MapAttrs={
+      0x7f020000, 0x7f020002, 0x7f020003, 0x7f020004, 
+      0x7f020005, 0x7f020006, 0x7f020007, 0x7f020008, 
+      0x7f020024, 0x7f020025, 0x7f020026, 0x7f020027, 
+      0x7f02002e, 0x7f02002f, 0x7f020032, 0x7f020033, 
+      0x7f020034, 0x7f020035, 0x7f020036, 0x7f020037, 
+      0x7f020038, 0x7f020039, 0x7f02003a, 0x7f02003b
+    };
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#ambientEnabled}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:ambientEnabled
+     */
+    public static final int MapAttrs_ambientEnabled=0;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#cameraBearing}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:cameraBearing
+     */
+    public static final int MapAttrs_cameraBearing=1;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#cameraMaxZoomPreference}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:cameraMaxZoomPreference
+     */
+    public static final int MapAttrs_cameraMaxZoomPreference=2;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#cameraMinZoomPreference}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:cameraMinZoomPreference
+     */
+    public static final int MapAttrs_cameraMinZoomPreference=3;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#cameraTargetLat}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:cameraTargetLat
+     */
+    public static final int MapAttrs_cameraTargetLat=4;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#cameraTargetLng}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:cameraTargetLng
+     */
+    public static final int MapAttrs_cameraTargetLng=5;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#cameraTilt}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:cameraTilt
+     */
+    public static final int MapAttrs_cameraTilt=6;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#cameraZoom}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:cameraZoom
+     */
+    public static final int MapAttrs_cameraZoom=7;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#latLngBoundsNorthEastLatitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:latLngBoundsNorthEastLatitude
+     */
+    public static final int MapAttrs_latLngBoundsNorthEastLatitude=8;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#latLngBoundsNorthEastLongitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:latLngBoundsNorthEastLongitude
+     */
+    public static final int MapAttrs_latLngBoundsNorthEastLongitude=9;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#latLngBoundsSouthWestLatitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:latLngBoundsSouthWestLatitude
+     */
+    public static final int MapAttrs_latLngBoundsSouthWestLatitude=10;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#latLngBoundsSouthWestLongitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name test.promoshop.apptest:latLngBoundsSouthWestLongitude
+     */
+    public static final int MapAttrs_latLngBoundsSouthWestLongitude=11;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#liteMode}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:liteMode
+     */
+    public static final int MapAttrs_liteMode=12;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#mapType}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>hybrid</td><td>4</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>normal</td><td>1</td><td></td></tr>
+     * <tr><td>satellite</td><td>2</td><td></td></tr>
+     * <tr><td>terrain</td><td>3</td><td></td></tr>
+     * </table>
+     *
+     * @attr name test.promoshop.apptest:mapType
+     */
+    public static final int MapAttrs_mapType=13;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#uiCompass}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:uiCompass
+     */
+    public static final int MapAttrs_uiCompass=14;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#uiMapToolbar}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:uiMapToolbar
+     */
+    public static final int MapAttrs_uiMapToolbar=15;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#uiRotateGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:uiRotateGestures
+     */
+    public static final int MapAttrs_uiRotateGestures=16;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#uiScrollGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:uiScrollGestures
+     */
+    public static final int MapAttrs_uiScrollGestures=17;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#uiScrollGesturesDuringRotateOrZoom}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:uiScrollGesturesDuringRotateOrZoom
+     */
+    public static final int MapAttrs_uiScrollGesturesDuringRotateOrZoom=18;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#uiTiltGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:uiTiltGestures
+     */
+    public static final int MapAttrs_uiTiltGestures=19;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#uiZoomControls}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:uiZoomControls
+     */
+    public static final int MapAttrs_uiZoomControls=20;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#uiZoomGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:uiZoomGestures
+     */
+    public static final int MapAttrs_uiZoomGestures=21;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#useViewLifecycle}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:useViewLifecycle
+     */
+    public static final int MapAttrs_useViewLifecycle=22;
+    /**
+     * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#zOrderOnTop}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name test.promoshop.apptest:zOrderOnTop
+     */
+    public static final int MapAttrs_zOrderOnTop=23;
+    /**
      * Attributes that can be used with a SignInButton.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -1255,7 +1701,7 @@ public final class R {
      * @see #SignInButton_scopeUris
      */
     public static final int[] SignInButton={
-      0x7f020000, 0x7f020009, 0x7f020022
+      0x7f020001, 0x7f020011, 0x7f020030
     };
     /**
      * <p>This symbol is the offset where the {@link test.promoshop.apptest.R.attr#buttonSize}

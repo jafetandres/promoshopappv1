@@ -6,8 +6,7 @@ import { FirebaseAuthentication } from '@ionic-native/firebase-authentication/ng
 import { Usuario } from '../interfaces/interfaces';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
-import { tap } from 'rxjs/operators';
-
+import { PushService } from './push.service';
 
 const URL = environment.url;
 
@@ -18,16 +17,17 @@ export class UsuarioService {
 
 
   token: string = null;
+  player_id: string = null;
   private usuario: Usuario = {};
   private ubicaciones: any = [];
-
 
   constructor(
     private http: HttpClient,
     private storage: Storage,
     private firebaseAuthentication: FirebaseAuthentication,
     private router: Router,
-    private navCtrl: NavController
+    private navCtrl: NavController,
+    private pushService: PushService
   ) { }
 
   enviarMensaje(number: string) {
@@ -44,10 +44,11 @@ export class UsuarioService {
     const data = { username, password }
     return new Promise(resolve => {
       this.http.post(`${URL}/auth/login/`, data)
-        .subscribe(resp => {
+        .subscribe(async resp => {
           if (resp['key'] != null) {
-            this.guardarToken(resp['key']);
-            console.log(resp['key']);
+            await this.guardarToken(resp['key']);
+            await this.validaToken();
+            await this.guardarPlayerId();
             resolve(true);
           } else {
             this.token = null;
@@ -55,24 +56,31 @@ export class UsuarioService {
             resolve(false);
           }
         });
-
     });
-
   }
+
+
 
   async guardarToken(token: string) {
     this.token = token;
     await this.storage.set('token', token);
-
+    await this.validaToken();
   }
 
-  registro(usuario: Usuario) {
+  logout() {
+    this.token = null;
+    this.usuario = null;
+    this.storage.clear();
+    this.navCtrl.navigateRoot('/inicio', { animated: true });
+  }
+
+  async registro(usuario: Usuario) {
+    usuario.player_id = await this.pushService.getUserIdOneSignal();
     return new Promise(resolve => {
       this.http.post(`${URL}/auth/registration/`, usuario)
-        .subscribe(resp => {
+        .subscribe(async resp => {
           if (resp['key'] != null) {
-            this.guardarToken(resp['key']);
-            console.log(resp['key']);
+            await this.guardarToken(resp['key']);
             resolve(true);
           } else {
             this.token = null;
@@ -102,9 +110,8 @@ export class UsuarioService {
       const headers = new HttpHeaders({
         'Authorization': 'Token ' + this.token
       });
-      this.http.get(`${URL}/usuario/`, { headers })
+      this.http.get(`${URL}/usuario`, { headers })
         .subscribe(resp => {
-          console.log(resp);
           if (resp['ok']) {
             this.usuario = resp['usuario'];
             resolve(true);
@@ -121,7 +128,9 @@ export class UsuarioService {
     });
   }
 
-  async getUbicaciones() {
+
+
+  async getUbicacionesUsuario() {
     await this.cargarToken();
     if (!this.token) {
       this.navCtrl.navigateRoot('/inicio', { animated: true });
@@ -129,6 +138,50 @@ export class UsuarioService {
     const headers = new HttpHeaders({
       'Authorization': 'Token ' + this.token
     });
-    return this.http.get(`${URL}/ubicaciones/`, { headers });
+    return this.http.get(`${URL}/listarubicaciones`, { headers });
+  }
+
+  async getTarjetasUsuario() {
+    await this.cargarToken();
+    if (!this.token) {
+      this.navCtrl.navigateRoot('/inicio', { animated: true });
+    }
+    const headers = new HttpHeaders({
+      'Authorization': 'Token ' + this.token
+    });
+    return this.http.get(`${URL}/listartarjetas`, { headers });
+  }
+
+
+
+  async registrarTarjetasUsuario(tarjeta) {
+    await this.cargarToken();
+    if (!this.token) {
+      this.navCtrl.navigateRoot('/inicio', { animated: true });
+    }
+    const headers = new HttpHeaders({
+      'Authorization': 'Token ' + this.token
+    });
+    return this.http.post(`${URL}/registrartarjeta`, tarjeta, { headers });
+  }
+
+  async guardarPlayerId() {
+
+    await this.cargarToken();
+    if (!this.token) {
+      this.navCtrl.navigateRoot('/inicio', { animated: true });
+    }
+    const headers = new HttpHeaders({
+      'Authorization': 'Token ' + this.token
+    });
+    // this.player_id = await this.pushService.getUserIdOneSignal();
+    this.player_id = 'prueba123player';
+
+    const data = { player_id: this.player_id }
+    console.log(this.player_id);
+    this.http.put(`${URL}/actualizarplayerid`,data, { headers })
+      .subscribe(resp => {
+        console.log(resp);
+      });
   }
 }

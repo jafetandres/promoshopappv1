@@ -61,7 +61,7 @@
         production: false,
         // url: 'https://promoshop.app/rest'
         // url: 'http://192.168.1.63:8080/NGNDigitalGuide/rest'
-        url: 'http://192.168.100.8:8000/api/v1',
+        url: 'http://192.168.1.23:8000/api/v1',
         dominio: 'http://192.168.100.8:8000'
       };
       /*
@@ -187,11 +187,12 @@
                   }
                 }, _callee2, this);
               }));
-            }); // this.oneSignal.getIds().then(info => {
-            //   this.userId = info.userId || 'bb4c4088-3427-44ff-8380-570aa6c1ce1a';
-            //   console.log(this.userId);
-            // });
+            });
+            this.oneSignal.getIds().then(function (info) {
+              _this.userId = info.userId; // this.storage.set('player_id', this.userId);
 
+              console.log(_this.userId);
+            });
             this.oneSignal.endInit();
           }
         }, {
@@ -740,11 +741,17 @@
       var _ionic_angular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! @ionic/angular */
       "TEn/");
+      /* harmony import */
+
+
+      var _push_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+      /*! ./push.service */
+      "H+l1");
 
       var URL = _environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].url;
 
       var UsuarioService = /*#__PURE__*/function () {
-        function UsuarioService(http, storage, firebaseAuthentication, router, navCtrl) {
+        function UsuarioService(http, storage, firebaseAuthentication, router, navCtrl, pushService) {
           _classCallCheck(this, UsuarioService);
 
           this.http = http;
@@ -752,8 +759,11 @@
           this.firebaseAuthentication = firebaseAuthentication;
           this.router = router;
           this.navCtrl = navCtrl;
+          this.pushService = pushService;
           this.token = null;
+          this.player_id = null;
           this.usuario = {};
+          this.ubicaciones = [];
         }
 
         _createClass(UsuarioService, [{
@@ -776,62 +786,138 @@
             };
             return new Promise(function (resolve) {
               _this3.http.post("".concat(URL, "/auth/login/"), data).subscribe(function (resp) {
-                if (resp['key'] != null) {
-                  _this3.guardarToken(resp['key']);
+                return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this3, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
+                  return regeneratorRuntime.wrap(function _callee7$(_context7) {
+                    while (1) {
+                      switch (_context7.prev = _context7.next) {
+                        case 0:
+                          if (!(resp['key'] != null)) {
+                            _context7.next = 10;
+                            break;
+                          }
 
-                  console.log(resp['key']);
-                  resolve(true);
-                } else {
-                  _this3.token = null;
+                          _context7.next = 3;
+                          return this.guardarToken(resp['key']);
 
-                  _this3.storage.clear();
+                        case 3:
+                          _context7.next = 5;
+                          return this.validaToken();
 
-                  resolve(false);
-                }
+                        case 5:
+                          _context7.next = 7;
+                          return this.guardarPlayerId();
+
+                        case 7:
+                          resolve(true);
+                          _context7.next = 13;
+                          break;
+
+                        case 10:
+                          this.token = null;
+                          this.storage.clear();
+                          resolve(false);
+
+                        case 13:
+                        case "end":
+                          return _context7.stop();
+                      }
+                    }
+                  }, _callee7, this);
+                }));
               });
             });
           }
         }, {
           key: "guardarToken",
           value: function guardarToken(token) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
-              return regeneratorRuntime.wrap(function _callee7$(_context7) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
+              return regeneratorRuntime.wrap(function _callee8$(_context8) {
                 while (1) {
-                  switch (_context7.prev = _context7.next) {
+                  switch (_context8.prev = _context8.next) {
                     case 0:
                       this.token = token;
-                      _context7.next = 3;
+                      _context8.next = 3;
                       return this.storage.set('token', token);
 
                     case 3:
+                      _context8.next = 5;
+                      return this.validaToken();
+
+                    case 5:
                     case "end":
-                      return _context7.stop();
+                      return _context8.stop();
                   }
                 }
-              }, _callee7, this);
+              }, _callee8, this);
             }));
+          }
+        }, {
+          key: "logout",
+          value: function logout() {
+            this.token = null;
+            this.usuario = null;
+            this.storage.clear();
+            this.navCtrl.navigateRoot('/inicio', {
+              animated: true
+            });
           }
         }, {
           key: "registro",
           value: function registro(usuario) {
-            var _this4 = this;
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
+              var _this4 = this;
 
-            return new Promise(function (resolve) {
-              _this4.http.post("".concat(URL, "/auth/registration/"), usuario).subscribe(function (resp) {
-                if (resp['key'] != null) {
-                  _this4.guardarToken(resp['key']);
+              return regeneratorRuntime.wrap(function _callee10$(_context10) {
+                while (1) {
+                  switch (_context10.prev = _context10.next) {
+                    case 0:
+                      _context10.next = 2;
+                      return this.pushService.getUserIdOneSignal();
 
-                  console.log(resp['key']);
-                  resolve(true);
-                } else {
-                  _this4.token = null;
+                    case 2:
+                      usuario.player_id = _context10.sent;
+                      return _context10.abrupt("return", new Promise(function (resolve) {
+                        _this4.http.post("".concat(URL, "/auth/registration/"), usuario).subscribe(function (resp) {
+                          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this4, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
+                            return regeneratorRuntime.wrap(function _callee9$(_context9) {
+                              while (1) {
+                                switch (_context9.prev = _context9.next) {
+                                  case 0:
+                                    if (!(resp['key'] != null)) {
+                                      _context9.next = 6;
+                                      break;
+                                    }
 
-                  _this4.storage.clear();
+                                    _context9.next = 3;
+                                    return this.guardarToken(resp['key']);
 
-                  resolve(false);
+                                  case 3:
+                                    resolve(true);
+                                    _context9.next = 9;
+                                    break;
+
+                                  case 6:
+                                    this.token = null;
+                                    this.storage.clear();
+                                    resolve(false);
+
+                                  case 9:
+                                  case "end":
+                                    return _context9.stop();
+                                }
+                              }
+                            }, _callee9, this);
+                          }));
+                        });
+                      }));
+
+                    case 4:
+                    case "end":
+                      return _context10.stop();
+                  }
                 }
-              });
-            });
+              }, _callee10, this);
+            }));
           }
         }, {
           key: "getUsuario",
@@ -841,70 +927,68 @@
         }, {
           key: "cargarToken",
           value: function cargarToken() {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
-              return regeneratorRuntime.wrap(function _callee8$(_context8) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
+              return regeneratorRuntime.wrap(function _callee11$(_context11) {
                 while (1) {
-                  switch (_context8.prev = _context8.next) {
+                  switch (_context11.prev = _context11.next) {
                     case 0:
-                      _context8.next = 2;
+                      _context11.next = 2;
                       return this.storage.get('token');
 
                     case 2:
-                      _context8.t0 = _context8.sent;
+                      _context11.t0 = _context11.sent;
 
-                      if (_context8.t0) {
-                        _context8.next = 5;
+                      if (_context11.t0) {
+                        _context11.next = 5;
                         break;
                       }
 
-                      _context8.t0 = null;
+                      _context11.t0 = null;
 
                     case 5:
-                      this.token = _context8.t0;
+                      this.token = _context11.t0;
 
                     case 6:
                     case "end":
-                      return _context8.stop();
+                      return _context11.stop();
                   }
                 }
-              }, _callee8, this);
+              }, _callee11, this);
             }));
           }
         }, {
           key: "validaToken",
           value: function validaToken() {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
               var _this5 = this;
 
-              return regeneratorRuntime.wrap(function _callee9$(_context9) {
+              return regeneratorRuntime.wrap(function _callee12$(_context12) {
                 while (1) {
-                  switch (_context9.prev = _context9.next) {
+                  switch (_context12.prev = _context12.next) {
                     case 0:
-                      _context9.next = 2;
+                      _context12.next = 2;
                       return this.cargarToken();
 
                     case 2:
                       if (this.token) {
-                        _context9.next = 5;
+                        _context12.next = 5;
                         break;
                       }
 
                       this.navCtrl.navigateRoot('/inicio', {
                         animated: true
                       });
-                      return _context9.abrupt("return", Promise.resolve(false));
+                      return _context12.abrupt("return", Promise.resolve(false));
 
                     case 5:
-                      return _context9.abrupt("return", new Promise(function (resolve) {
+                      return _context12.abrupt("return", new Promise(function (resolve) {
                         var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                           'Authorization': 'Token ' + _this5.token
                         });
 
-                        _this5.http.get("".concat(URL, "/usuario/"), {
+                        _this5.http.get("".concat(URL, "/usuario"), {
                           headers: headers
                         }).subscribe(function (resp) {
-                          console.log(resp);
-
                           if (resp['ok']) {
                             _this5.usuario = resp['usuario'];
                             resolve(true);
@@ -928,10 +1012,158 @@
 
                     case 6:
                     case "end":
-                      return _context9.stop();
+                      return _context12.stop();
                   }
                 }
-              }, _callee9, this);
+              }, _callee12, this);
+            }));
+          }
+        }, {
+          key: "getUbicacionesUsuario",
+          value: function getUbicacionesUsuario() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
+              var headers;
+              return regeneratorRuntime.wrap(function _callee13$(_context13) {
+                while (1) {
+                  switch (_context13.prev = _context13.next) {
+                    case 0:
+                      _context13.next = 2;
+                      return this.cargarToken();
+
+                    case 2:
+                      if (!this.token) {
+                        this.navCtrl.navigateRoot('/inicio', {
+                          animated: true
+                        });
+                      }
+
+                      headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                        'Authorization': 'Token ' + this.token
+                      });
+                      return _context13.abrupt("return", this.http.get("".concat(URL, "/listarubicaciones"), {
+                        headers: headers
+                      }));
+
+                    case 5:
+                    case "end":
+                      return _context13.stop();
+                  }
+                }
+              }, _callee13, this);
+            }));
+          }
+        }, {
+          key: "getTarjetasUsuario",
+          value: function getTarjetasUsuario() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
+              var headers;
+              return regeneratorRuntime.wrap(function _callee14$(_context14) {
+                while (1) {
+                  switch (_context14.prev = _context14.next) {
+                    case 0:
+                      _context14.next = 2;
+                      return this.cargarToken();
+
+                    case 2:
+                      if (!this.token) {
+                        this.navCtrl.navigateRoot('/inicio', {
+                          animated: true
+                        });
+                      }
+
+                      headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                        'Authorization': 'Token ' + this.token
+                      });
+                      return _context14.abrupt("return", this.http.get("".concat(URL, "/listartarjetas"), {
+                        headers: headers
+                      }));
+
+                    case 5:
+                    case "end":
+                      return _context14.stop();
+                  }
+                }
+              }, _callee14, this);
+            }));
+          }
+        }, {
+          key: "registrarTarjetasUsuario",
+          value: function registrarTarjetasUsuario(tarjeta) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
+              var headers;
+              return regeneratorRuntime.wrap(function _callee15$(_context15) {
+                while (1) {
+                  switch (_context15.prev = _context15.next) {
+                    case 0:
+                      _context15.next = 2;
+                      return this.cargarToken();
+
+                    case 2:
+                      if (!this.token) {
+                        this.navCtrl.navigateRoot('/inicio', {
+                          animated: true
+                        });
+                      }
+
+                      headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                        'Authorization': 'Token ' + this.token
+                      });
+                      return _context15.abrupt("return", this.http.post("".concat(URL, "/registrartarjeta"), tarjeta, {
+                        headers: headers
+                      }));
+
+                    case 5:
+                    case "end":
+                      return _context15.stop();
+                  }
+                }
+              }, _callee15, this);
+            }));
+          }
+        }, {
+          key: "guardarPlayerId",
+          value: function guardarPlayerId() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
+              var headers, data;
+              return regeneratorRuntime.wrap(function _callee16$(_context16) {
+                while (1) {
+                  switch (_context16.prev = _context16.next) {
+                    case 0:
+                      _context16.next = 2;
+                      return this.cargarToken();
+
+                    case 2:
+                      if (!this.token) {
+                        this.navCtrl.navigateRoot('/inicio', {
+                          animated: true
+                        });
+                      }
+
+                      headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                        'Authorization': 'Token ' + this.token
+                      });
+                      _context16.next = 6;
+                      return this.pushService.getUserIdOneSignal();
+
+                    case 6:
+                      this.player_id = _context16.sent;
+                      // this.player_id = 'prueba123player';
+                      data = {
+                        player_id: this.player_id
+                      };
+                      console.log(this.player_id);
+                      this.http.put("".concat(URL, "/actualizarplayerid"), data, {
+                        headers: headers
+                      }).subscribe(function (resp) {
+                        console.log(resp);
+                      });
+
+                    case 10:
+                    case "end":
+                      return _context16.stop();
+                  }
+                }
+              }, _callee16, this);
             }));
           }
         }]);
@@ -950,6 +1182,8 @@
           type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]
         }, {
           type: _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["NavController"]
+        }, {
+          type: _push_service__WEBPACK_IMPORTED_MODULE_8__["PushService"]
         }];
       };
 
@@ -1057,7 +1291,7 @@
         loadChildren: function loadChildren() {
           return Promise.all(
           /*! import() | pages-perfil-usuario-perfil-usuario-module */
-          [__webpack_require__.e("default~pages-perfil-usuario-perfil-usuario-module~tab1-tab1-module"), __webpack_require__.e("common"), __webpack_require__.e("pages-perfil-usuario-perfil-usuario-module")]).then(__webpack_require__.bind(null,
+          [__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-perfil-usuario-perfil-usuario-module")]).then(__webpack_require__.bind(null,
           /*! ./pages/perfil-usuario/perfil-usuario.module */
           "pMbb")).then(function (m) {
             return m.PerfilUsuarioPageModule;
@@ -1077,12 +1311,89 @@
       }, {
         path: 'cart-marketplace',
         loadChildren: function loadChildren() {
-          return __webpack_require__.e(
+          return Promise.all(
           /*! import() | pages-cart-marketplace-cart-marketplace-module */
-          "common").then(__webpack_require__.bind(null,
+          [__webpack_require__.e("default~cart-marketplace-cart-marketplace-module~pages-cart-marketplace-cart-marketplace-module"), __webpack_require__.e("common")]).then(__webpack_require__.bind(null,
           /*! ./pages/cart-marketplace/cart-marketplace.module */
           "/ZBB")).then(function (m) {
             return m.CartMarketplacePageModule;
+          });
+        }
+      }, {
+        path: 'modal-agregar-ubicacion',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() | pages-modal-agregar-ubicacion-modal-agregar-ubicacion-module */
+          "pages-modal-agregar-ubicacion-modal-agregar-ubicacion-module").then(__webpack_require__.bind(null,
+          /*! ./pages/modal-agregar-ubicacion/modal-agregar-ubicacion.module */
+          "plgE")).then(function (m) {
+            return m.ModalAgregarUbicacionPageModule;
+          });
+        }
+      }, {
+        path: 'modal-ubicaciones-guardadas',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() | pages-modal-ubicaciones-guardadas-modal-ubicaciones-guardadas-module */
+          "pages-modal-ubicaciones-guardadas-modal-ubicaciones-guardadas-module").then(__webpack_require__.bind(null,
+          /*! ./pages/modal-ubicaciones-guardadas/modal-ubicaciones-guardadas.module */
+          "PcIG")).then(function (m) {
+            return m.ModalUbicacionesGuardadasPageModule;
+          });
+        }
+      }, {
+        path: 'modal-metodos-pago-guardados',
+        loadChildren: function loadChildren() {
+          return Promise.all(
+          /*! import() | pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module */
+          [__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module")]).then(__webpack_require__.bind(null,
+          /*! ./pages/modal-metodos-pago-guardados/modal-metodos-pago-guardados.module */
+          "nCwK")).then(function (m) {
+            return m.ModalMetodosPagoGuardadosPageModule;
+          });
+        }
+      }, {
+        path: 'modal-registrar-tarjeta',
+        loadChildren: function loadChildren() {
+          return Promise.all(
+          /*! import() | pages-modal-registrar-tarjeta-modal-registrar-tarjeta-module */
+          [__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-modal-registrar-tarjeta-modal-registrar-tarjeta-module")]).then(__webpack_require__.bind(null,
+          /*! ./pages/modal-registrar-tarjeta/modal-registrar-tarjeta.module */
+          "VY6p")).then(function (m) {
+            return m.ModalRegistrarTarjetaPageModule;
+          });
+        }
+      }, {
+        path: 'ver-restaurantes',
+        loadChildren: function loadChildren() {
+          return Promise.all(
+          /*! import() | pages-ver-restaurantes-ver-restaurantes-module */
+          [__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-ver-restaurantes-ver-restaurantes-module")]).then(__webpack_require__.bind(null,
+          /*! ./pages/ver-restaurantes/ver-restaurantes.module */
+          "biCY")).then(function (m) {
+            return m.VerRestaurantesPageModule;
+          });
+        }
+      }, {
+        path: 'modal-ver-restaurante',
+        loadChildren: function loadChildren() {
+          return Promise.all(
+          /*! import() | pages-modal-ver-restaurante-modal-ver-restaurante-module */
+          [__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("common"), __webpack_require__.e("pages-modal-ver-restaurante-modal-ver-restaurante-module")]).then(__webpack_require__.bind(null,
+          /*! ./pages/modal-ver-restaurante/modal-ver-restaurante.module */
+          "5YfY")).then(function (m) {
+            return m.ModalVerRestaurantePageModule;
+          });
+        }
+      }, {
+        path: 'modal-ver-pedido',
+        loadChildren: function loadChildren() {
+          return Promise.all(
+          /*! import() | pages-modal-ver-pedido-modal-ver-pedido-module */
+          [__webpack_require__.e("default~pages-modal-metodos-pago-guardados-modal-metodos-pago-guardados-module~pages-modal-registrar~a84bc544"), __webpack_require__.e("default~pages-modal-ver-pedido-modal-ver-pedido-module~tab3-tab3-module"), __webpack_require__.e("common"), __webpack_require__.e("pages-modal-ver-pedido-modal-ver-pedido-module")]).then(__webpack_require__.bind(null,
+          /*! ./pages/modal-ver-pedido/modal-ver-pedido.module */
+          "kG5z")).then(function (m) {
+            return m.ModalVerPedidoPageModule;
           });
         }
       }];

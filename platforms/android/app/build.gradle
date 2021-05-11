@@ -92,6 +92,9 @@ ext {
 
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "../onesignal-cordova-plugin/pushapp001-build-extras-onesignal.gradle"
+apply from: "../cordova-androidx-build/apptest-cordova-androidx-build.gradle"
+apply from: "../cordova-plugin-googlemaps/apptest-tbxml-android.gradle"
+apply from: "../cordova-plugin-googlemaps/apptest-pgm-custom.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()

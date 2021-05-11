@@ -1,47 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["common"],{
 
-/***/ "/ZBB":
-/*!*******************************************************************!*\
-  !*** ./src/app/pages/cart-marketplace/cart-marketplace.module.ts ***!
-  \*******************************************************************/
-/*! exports provided: CartMarketplacePageModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CartMarketplacePageModule", function() { return CartMarketplacePageModule; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "TEn/");
-/* harmony import */ var _cart_marketplace_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./cart-marketplace-routing.module */ "edYw");
-/* harmony import */ var _cart_marketplace_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cart-marketplace.page */ "3Rcg");
-
-
-
-
-
-
-
-let CartMarketplacePageModule = class CartMarketplacePageModule {
-};
-CartMarketplacePageModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        imports: [
-            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
-            _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
-            _cart_marketplace_routing_module__WEBPACK_IMPORTED_MODULE_5__["CartMarketplacePageRoutingModule"]
-        ],
-        declarations: [_cart_marketplace_page__WEBPACK_IMPORTED_MODULE_6__["CartMarketplacePage"]]
-    })
-], CartMarketplacePageModule);
-
-
-
-/***/ }),
-
 /***/ "0/6H":
 /*!*********************************************************************!*\
   !*** ./node_modules/@ionic/core/dist/esm/button-active-a6787d69.js ***!
@@ -118,62 +76,6 @@ const createButtonActiveGesture = (el, isButton) => {
   });
 };
 
-
-
-
-/***/ }),
-
-/***/ "3Rcg":
-/*!*****************************************************************!*\
-  !*** ./src/app/pages/cart-marketplace/cart-marketplace.page.ts ***!
-  \*****************************************************************/
-/*! exports provided: CartMarketplacePage */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CartMarketplacePage", function() { return CartMarketplacePage; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
-/* harmony import */ var _raw_loader_cart_marketplace_page_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./cart-marketplace.page.html */ "tlY1");
-/* harmony import */ var _cart_marketplace_page_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cart-marketplace.page.scss */ "kHW6");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _services_cart_marketplace_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/cart-marketplace.service */ "u4O0");
-
-
-
-
-
-let CartMarketplacePage = class CartMarketplacePage {
-    constructor(cartMarketplaceService) {
-        this.cartMarketplaceService = cartMarketplaceService;
-        this.cart = [];
-    }
-    ngOnInit() {
-        this.cart = this.cartMarketplaceService.getCart();
-    }
-    decreaseCartItem(product) {
-        this.cartMarketplaceService.decreaseProduct(product);
-    }
-    increaseCartItem(product) {
-        this.cartMarketplaceService.addProduct(product);
-    }
-    removeCartItem(product) {
-        this.cartMarketplaceService.removeProduct(product);
-    }
-    getTotal() {
-        return this.cart.reduce((i, j) => i + j.precio * j.amount, 0);
-    }
-};
-CartMarketplacePage.ctorParameters = () => [
-    { type: _services_cart_marketplace_service__WEBPACK_IMPORTED_MODULE_4__["CartMarketplaceService"] }
-];
-CartMarketplacePage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
-        selector: 'app-cart-marketplace',
-        template: _raw_loader_cart_marketplace_page_html__WEBPACK_IMPORTED_MODULE_1__["default"],
-        styles: [_cart_marketplace_page_scss__WEBPACK_IMPORTED_MODULE_2__["default"]]
-    })
-], CartMarketplacePage);
 
 
 
@@ -555,43 +457,6 @@ const detachComponent = (delegate, element) => {
 
 /***/ }),
 
-/***/ "edYw":
-/*!***************************************************************************!*\
-  !*** ./src/app/pages/cart-marketplace/cart-marketplace-routing.module.ts ***!
-  \***************************************************************************/
-/*! exports provided: CartMarketplacePageRoutingModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CartMarketplacePageRoutingModule", function() { return CartMarketplacePageRoutingModule; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "tyNb");
-/* harmony import */ var _cart_marketplace_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cart-marketplace.page */ "3Rcg");
-
-
-
-
-const routes = [
-    {
-        path: '',
-        component: _cart_marketplace_page__WEBPACK_IMPORTED_MODULE_3__["CartMarketplacePage"]
-    }
-];
-let CartMarketplacePageRoutingModule = class CartMarketplacePageRoutingModule {
-};
-CartMarketplacePageRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
-        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]],
-    })
-], CartMarketplacePageRoutingModule);
-
-
-
-/***/ }),
-
 /***/ "h3R7":
 /*!***********************************************************************!*\
   !*** ./node_modules/@ionic/core/dist/esm/spinner-configs-cd7845af.js ***!
@@ -726,19 +591,6 @@ const SPINNERS = spinners;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("#container {\n  text-align: center;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n#container strong {\n  font-size: 20px;\n  line-height: 26px;\n}\n\n#container p {\n  font-size: 16px;\n  line-height: 22px;\n  color: #8c8c8c;\n  margin: 0;\n}\n\n#container a {\n  text-decoration: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2V4cGxvcmUtY29udGFpbmVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7RUFFQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxRQUFBO0VBQ0EsUUFBQTtFQUNBLDJCQUFBO0FBQUY7O0FBR0E7RUFDRSxlQUFBO0VBQ0EsaUJBQUE7QUFBRjs7QUFHQTtFQUNFLGVBQUE7RUFDQSxpQkFBQTtFQUVBLGNBQUE7RUFFQSxTQUFBO0FBRkY7O0FBS0E7RUFDRSxxQkFBQTtBQUZGIiwiZmlsZSI6ImV4cGxvcmUtY29udGFpbmVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2NvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcblxuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICB0b3A6IDUwJTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xufVxuXG4jY29udGFpbmVyIHN0cm9uZyB7XG4gIGZvbnQtc2l6ZTogMjBweDtcbiAgbGluZS1oZWlnaHQ6IDI2cHg7XG59XG5cbiNjb250YWluZXIgcCB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgbGluZS1oZWlnaHQ6IDIycHg7XG5cbiAgY29sb3I6ICM4YzhjOGM7XG5cbiAgbWFyZ2luOiAwO1xufVxuXG4jY29udGFpbmVyIGEge1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG59Il19 */");
-
-/***/ }),
-
-/***/ "kHW6":
-/*!*******************************************************************!*\
-  !*** ./src/app/pages/cart-marketplace/cart-marketplace.page.scss ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjYXJ0LW1hcmtldHBsYWNlLnBhZ2Uuc2NzcyJ9 */");
 
 /***/ }),
 
@@ -1026,19 +878,6 @@ ExploreContainerComponentModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__d
 
 /***/ }),
 
-/***/ "tlY1":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/cart-marketplace/cart-marketplace.page.html ***!
-  \*********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header  [translucent]=\"true\">\n  <ion-toolbar>\n    \n  </ion-toolbar>\n</ion-header>\n<ion-content [fullscreen]=\"true\" >\n  <ion-list>\n    <ion-item detail>\n      <ion-label>\n        Ubicaciones guardadas\n      </ion-label>\n      <ion-icon name=\"location\" slot=\"start\"></ion-icon>\n    </ion-item>\n  </ion-list >\n    <ion-list class=\"ion-padding\">\n      <ion-list-header>\n        <ion-label>Tus articulos</ion-label>\n      </ion-list-header>\n      <ion-item *ngFor=\"let p of cart\" class=\"ion-text-wrap\">\n        <ion-grid>\n          <ion-row class=\"ion-align-items-center\">\n            <ion-col size=\"2\" class=\"ion-align-self-center\">\n              <ion-button color=\"medium\" fill=\"clear\" (click)=\"decreaseCartItem(p)\">\n                <ion-icon name=\"remove-circle\" slot=\"icon-only\"></ion-icon>\n              </ion-button>\n            </ion-col>\n \n            <ion-col size=\"1\" class=\"ion-align-self-center\">\n              {{ p.amount }}\n            </ion-col>\n \n            <ion-col size=\"2\" class=\"ion-align-self-center\">\n              <ion-button color=\"medium\" fill=\"clear\" (click)=\"increaseCartItem(p)\">\n                <ion-icon name=\"add-circle\" slot=\"icon-only\"></ion-icon>\n              </ion-button>\n            </ion-col>\n \n            <ion-col size=\"2\" offset=\"5\">\n              <ion-button color=\"medium\" fill=\"clear\" (click)=\"removeCartItem(p)\">\n                <ion-icon name=\"close-circle\" slot=\"icon-only\"></ion-icon>\n              </ion-button>\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col size=\"9\">\n              <b>{{ p.nombre }}</b>\n            </ion-col>\n            <ion-col size=\"3\" class=\"ion-text-end\">\n              {{ p.amount * p.precio | currency:'USD' }}\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n      </ion-item>\n      <ion-item>\n        <ion-grid>\n          <ion-row>\n            <ion-col size=\"9\">\n              Total:\n            </ion-col>\n            <ion-col size=\"3\" class=\"ion-text-end\">\n              {{ getTotal() | currency:'USD' }}\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n      </ion-item>\n    </ion-list>\n \n    <ion-button expand=\"block\" (click)=\"checkout()\" color=\"promoshop\">\n      Finalizar compra\n    </ion-button>\n\n \n</ion-content>");
-
-/***/ }),
-
 /***/ "u4O0":
 /*!******************************************************!*\
   !*** ./src/app/services/cart-marketplace.service.ts ***!
@@ -1066,26 +905,30 @@ let CartMarketplaceService = class CartMarketplaceService {
     getCartItemCount() {
         return this.cartItemCount;
     }
-    addProduct(producto) {
+    addProducto(producto) {
         let added = false;
+        var cantidad = +producto.cantidad;
         for (let p of this.cart) {
             if (p.id === producto.id) {
-                p.amount += 1;
+                cantidad += 1;
+                console.log(cantidad);
+                p.cantidad = cantidad;
                 added = true;
                 break;
             }
         }
         if (!added) {
-            producto.amount = 1;
+            // producto.cantidad = 1;
+            console.log("entro2" + producto.cantidad);
             this.cart.push(producto);
         }
-        this.cartItemCount.next(this.cartItemCount.value + 1);
+        this.cartItemCount.next(this.cartItemCount.value + cantidad);
     }
     decreaseProduct(product) {
         for (let [index, p] of this.cart.entries()) {
             if (p.id === product.id) {
-                p.amount -= 1;
-                if (p.amount == 0) {
+                p.cantidad -= 1;
+                if (p.cantidad === 0) {
                     this.cart.splice(index, 1);
                 }
             }
@@ -1095,7 +938,7 @@ let CartMarketplaceService = class CartMarketplaceService {
     removeProduct(product) {
         for (let [index, p] of this.cart.entries()) {
             if (p.id === product.id) {
-                this.cartItemCount.next(this.cartItemCount.value - p.amount);
+                this.cartItemCount.next(this.cartItemCount.value - p.cantidad);
                 this.cart.splice(index, 1);
             }
         }

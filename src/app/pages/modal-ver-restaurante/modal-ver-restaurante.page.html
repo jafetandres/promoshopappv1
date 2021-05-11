@@ -1,0 +1,89 @@
+<!-- <app-modal-header icon_name="close" titulo="{{restaurante.nombre}}" portada="{{restaurante.portada}}"></app-modal-header> -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)=" salirConArgumentos()" fill="clear" color="promoshop">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{restaurante.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar class="toolbar-background">
+      <ion-buttons slot="start">
+        <ion-button (click)="onClick()" fill="clear" color="promoshop">
+          <ion-icon name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header> -->
+  <!-- <img src="{{restaurante.portada}}" alt=""> -->
+
+  <ion-card *ngFor="let producto of restaurante.productos">
+    <ion-card-header>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card-title>
+            {{producto.nombre}}
+          </ion-card-title>
+
+          <p>Pizza mediana con papas fritas y gaseosa a su elección</p>
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <img src="http://192.168.1.23:8000{{producto.imagenes[0].imagen}}" alt="">
+        </ion-col>
+      </ion-row>
+
+      <ion-card-subtitle>
+        <ion-row>
+          <ion-col size="6">
+            $ {{producto.precio}}
+          </ion-col>
+          <ion-col size="6" class="ion-text-center">
+            <ion-icon name="add" color="promoshop"></ion-icon> 0 <ion-icon name="remove" size="medium"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+
+  <ion-card *ngFor="let producto of restaurante.productos">
+    <ion-card-header>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card-title>
+            {{producto.nombre}}
+          </ion-card-title>
+
+          <p>Pizza mediana con papas fritas y gaseosa a su elección</p>
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <img src="http://192.168.1.23:8000{{producto.imagenes[0].imagen}}" alt="">
+        </ion-col>
+      </ion-row>
+
+      <ion-card-subtitle>
+        <ion-row>
+          <ion-col size="6">
+            $ {{producto.precio}}
+          </ion-col>
+          <ion-col size="6" class="ion-text-center">
+            <ion-icon name="add" ></ion-icon>
+            0
+            <ion-icon name="remove"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <!-- <ion-card *ngFor="let producto of [1,2,3,4,5,6,7,8,9]">
+    <img src="" alt="">
+    <h1>producto</h1>
+    <ion-card-header>
+      <ion-card-title>nombre</ion-card-title>
+    </ion-card-header>
+  </ion-card> -->
+</ion-content>

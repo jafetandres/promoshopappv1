@@ -77,6 +77,23 @@
             "outputFile": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
+                    "source": "/Users/jafetandresgalvezquezada/Dropbox/curso-ionic6/promoshop/promoshopappv1/platforms/android/app/src/main/res/values-pt-rPT/pgm_strings.xml",
+                    "from": {
+                        "startLines": "3,18,2,5,4,6,7,8,9,10,11,12,13,14,17,15,16",
+                        "startColumns": "2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2",
+                        "startOffsets": "110,2460,53,373,242,596,761,885,1052,1192,1368,1558,1711,1904,2351,2081,2247",
+                        "endColumns": "131,110,56,222,130,164,123,166,139,175,189,152,192,176,108,165,103",
+                        "endOffsets": "239,2568,107,593,370,758,882,1049,1189,1365,1555,1708,1901,2078,2457,2244,2348"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3035,3169,3282,3341,3566,3699,3866,3992,4161,4303,4481,4673,4828,5023,5202,5313,5481",
+                        "endColumns": "133,112,58,224,132,166,125,168,141,177,191,154,194,178,110,167,105",
+                        "endOffsets": "3164,3277,3336,3561,3694,3861,3987,4156,4298,4476,4668,4823,5018,5197,5308,5476,5582"
+                    }
+                },
+                {
                     "source": "/Users/jafetandresgalvezquezada/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ee107b95619fe31bef8e7ab20187adae/res/values-pt-rPT/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -120,11 +137,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "21",
+                        "startLines": "38",
                         "startColumns": "4",
-                        "startOffsets": "3035",
+                        "startOffsets": "5587",
                         "endColumns": "100",
-                        "endOffsets": "3131"
+                        "endOffsets": "5683"
                     }
                 },
                 {
